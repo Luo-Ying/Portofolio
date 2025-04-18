@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
+import HomePage from './pages/homePage';
+import ProjectsPage from './pages/projectsPage';
+import ContactPage from './pages/contactPage';
+import PortofolioHeader from './components/portofolioHeader';
+import PortofolioFooter from './components/portofolioFooter';
 function App() {
+  const [activeTab, setActiveTab] = useState('accueil');
+
+
+  const renderContent = () => {
+    if (activeTab === 'accueil') {
+      return <HomePage />;
+    } else if (activeTab === 'projets') {
+      return <ProjectsPage />;
+    } else if (activeTab === 'contact') {
+      return <ContactPage />;
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="portfolio-app">
+      <PortofolioHeader activeTab={activeTab} fnSetActiveTab={setActiveTab} />
+      <main className="portfolio-content">
+        {renderContent()}
+      </main>
+      <PortofolioFooter />
     </div>
   );
 }

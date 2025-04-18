@@ -32,7 +32,382 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+/* 基本样式 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #f4f4f4;
+  background-color: #282c34;
+}
+
+.portfolio-app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* 头部样式 */
+.portfolio-header {
+  background-color: #1e2228;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.portfolio-header h1 {
+  margin-bottom: 1rem;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.main-nav button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.main-nav button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main-nav button.active {
+  border-bottom: 2px solid white;
+  font-weight: bold;
+}
+
+/* 主要内容样式 */
+.portfolio-content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* 首页样式 - 更新 */
+.accueil-content {
+  text-align: left;
+  padding: 2rem;
+}
+
+.accueil-content h2 {
+  margin-bottom: 1rem;
+  color: #61dafb;
+}
+
+.accueil-content p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #f4f4f4;
+}
+
+/* 个人资料部分 */
+.profile-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 2rem;
+}
+
+.profile-photo {
+  flex-shrink: 0;
+}
+
+.photo-placeholder {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #353b45;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #61dafb;
+  font-weight: bold;
+  border: 3px solid #61dafb;
+}
+
+.profile-info {
+  flex-grow: 1;
+}
+
+.profile-info h2 {
+  color: #61dafb;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.profile-info .title {
+  color: #f4f4f4;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.profile-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* 关于部分 */
+.about-section {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background-color: #353b45;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.about-section h3 {
+  color: #61dafb;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.about-section p {
+  color: #f4f4f4;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* 技能部分 */
+.skills-section {
+  margin-bottom: 3rem;
+}
+
+.skills-section h3 {
+  color: #61dafb;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skill-card {
+  background-color: #1e2228;
+  color: #61dafb;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  border: 1px solid #61dafb;
+}
+
+/* 特色项目部分 */
+.featured-projects {
+  margin-bottom: 2rem;
+}
+
+.featured-projects h3 {
+  color: #61dafb;
+  margin: 2rem 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.project-preview {
+  background-color: #353b45;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.project-preview p {
+  color: #f4f4f4;
+  line-height: 1.6;
+}
+
+/* 项目样式 */
+.projets-content {
+  padding: 1rem;
+}
+
+.project-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 0.5rem;
+}
+
+.project-tabs button {
+  background-color: #1e2228;
+  border: none;
+  border-radius: 4px;
+  color: #f4f4f4;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.project-tabs button:hover {
+  background-color: #353b45;
+}
+
+.project-tabs button.active {
+  background-color: #61dafb;
+  color: #282c34;
+}
+
+.project-section {
+  margin-top: 1rem;
+}
+
+.project-section h3 {
+  color: #61dafb;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.project-card {
+  background-color: #353b45;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  color: #f4f4f4;
+}
+
+.project-card h4 {
+  color: #61dafb;
+  margin-bottom: 0.5rem;
+}
+
+/* 联系表单样式 */
+.contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-content h2 {
+  color: #61dafb;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.contact-form {
+  background-color: #353b45;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #f4f4f4;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #1e2228;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #1e2228;
+  color: #f4f4f4;
+}
+
+.contact-form button {
+  background-color: #61dafb;
+  border: none;
+  border-radius: 4px;
+  color: #282c34;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #4fa8d1;
+}
+
+/* 页脚样式 */
+.portfolio-footer {
+  background-color: #1e2228;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* 响应式设计更新 */
+@media (max-width: 768px) {
+  .main-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .project-tabs {
+    flex-direction: column;
+  }
+
+  .portfolio-content {
+    padding: 1rem;
+  }
+
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skills-container {
+    justify-content: center;
+  }
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+  /* 或者与您的设计匹配的颜色 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* 添加阴影效果，使导航栏更加明显 */
+}
+
+/* 为了防止内容被固定导航栏遮挡，需要给主内容区域添加上边距 */
+.main-content {
+  margin-top: 60px;
+  /* 根据您导航栏的高度调整此值 */
 }
