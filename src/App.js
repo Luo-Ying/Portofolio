@@ -6,17 +6,17 @@ import ProjectsPage from './pages/projectsPage';
 import ContactPage from './pages/contactPage';
 import PortofolioHeader from './components/portofolioHeader';
 import PortofolioFooter from './components/portofolioFooter';
+import { currentLanguage } from './utils/globalVars';
 
 function App() {
-  const [activeTab, setActiveTab] = useState('accueil');
-
+  const [activeTab, setActiveTab] = useState(currentLanguage.activeTabHome);
 
   const renderContent = () => {
-    if (activeTab === 'accueil') {
+    if (activeTab === currentLanguage.activeTabHome) {
       return <HomePage />;
-    } else if (activeTab === 'projets') {
+    } else if (activeTab === currentLanguage.activeTabProjects) {
       return <ProjectsPage />;
-    } else if (activeTab === 'contact') {
+    } else if (activeTab === currentLanguage.activeTabContact) {
       return <ContactPage />;
     }
   };

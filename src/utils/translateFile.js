@@ -1,12 +1,18 @@
 const dict = {
     en: {
-        activeTab: "Home"
+        activeTabHome: "Home",
+        activeTabProjects: "Projects",
+        activeTabContact: "Contact"
     },
     fr: {
-        activeTab: "Accueil"
+        activeTabHome: "Accueil",
+        activeTabProjects: "Projets",
+        activeTabContact: "Contact"
     },
     zh: {
-        activeTab: "首页"
+        activeTabHome: "首页",
+        activeTabProjects: "项目",
+        activeTabContact: "联系"
     }
 }
 
