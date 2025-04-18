@@ -275,12 +275,26 @@ body {
 }
 
 .skill-card {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+.skill-card {
   background-color: #1e2228;
   color: #61dafb;
   padding: 0.5rem 1rem;
+  text-align: center;
+  /* padding: 0.5rem 0.5rem; */
   border-radius: 4px;
   font-weight: bold;
   border: 1px solid #61dafb;
+}
+
+.skill-icon {
+  width: 25px;
+  height: 25px;
 }
 
 /* 特色项目部分 */

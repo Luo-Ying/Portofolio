@@ -1,5 +1,5 @@
 import PersonalInfo from '../components/personalInfo'
-
+import IntroSection from '../components/introsection'
 const HomePage = () => {
   return (
     <div className="accueil-content">
@@ -9,18 +9,7 @@ const HomePage = () => {
 
       <div className='more-details-section'>
         <div className="intro-section">
-          <h3>Simple intro</h3>
-          <p>Je suis un développeur passionné par la création d'applications web innovantes.</p>
-          <p>Explorez mes projets pour découvrir mon travail et mes compétences.</p>
-        </div>
-
-        <div className="skills-section">
-          <h3>STACK</h3>
-          <div className="skills-container">
-            <div className="skill-card">React</div>
-            <div className="skill-card">Node.js</div>
-            <div className="skill-card">MongoDB</div>
-          </div>
+          <IntroSection />
         </div>
 
         <div className="featured-projects">
