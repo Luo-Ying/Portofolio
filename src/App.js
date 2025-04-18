@@ -6,6 +6,7 @@ import ProjectsPage from './pages/projectsPage';
 import ContactPage from './pages/contactPage';
 import PortofolioHeader from './components/portofolioHeader';
 import PortofolioFooter from './components/portofolioFooter';
+
 function App() {
   const [activeTab, setActiveTab] = useState('accueil');
 

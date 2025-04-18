@@ -1,8 +1,10 @@
+import dict from './translateFile';
+
 // 语言选项
 export const LANGUAGES = {
-    CHINESE: 'zh',
-    FRENCH: 'fr',
-    ENGLISH: 'en'
+    CHINESE: dict.zh,
+    FRENCH: dict.fr,
+    ENGLISH: dict.en
 };
 
 // 默认语言
