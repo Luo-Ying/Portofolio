@@ -473,6 +473,43 @@ body {
   /* 添加阴影效果，使导航栏更加明显 */
 }
 
+.language-selector {
+  /* z-index: 1000; */
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  justify-content: right;
+  gap: 0.5rem;
+  width: fit-content;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  color: #f4f4f4;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.lang-btn:hover {
+  color: #61dafb;
+}
+
+.lang-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+
 /* 为了防止内容被固定导航栏遮挡，需要给主内容区域添加上边距 */
 .main-content {
   margin-top: 60px;

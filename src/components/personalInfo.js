@@ -1,6 +1,7 @@
 import githubIcon from '../assets/github-icon.png'
 import profilPhoto from '../assets/profil_linkdin.jpg'
 import linkedinIcon from '../assets/linkedin.png'
+
 const PersonalInfo = () => {
     return (
         <div>

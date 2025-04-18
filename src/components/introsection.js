@@ -12,9 +12,9 @@ const IntroSection = () => {
             <div className="skills-section">
                 <h3>Stack</h3>
                 <div className="skills-container">
-                    <div className="skill-card"><img src={reactIcon} alt="GitHub" className="skill-icon" /> React</div>
-                    <div className="skill-card"><img src={nodejsIcon} alt="GitHub" className="skill-icon" />Node.js</div>
-                    <div className="skill-card"><img src={mongodbIcon} alt="GitHub" className="skill-icon" />MongoDB</div>
+                    <div className="skill-card"><img src={reactIcon} alt="react" className="skill-icon" /> React</div>
+                    <div className="skill-card"><img src={nodejsIcon} alt="node.js" className="skill-icon" />Node.js</div>
+                    <div className="skill-card"><img src={mongodbIcon} alt="mongodb" className="skill-icon" />MongoDB</div>
                 </div>
             </div>
         </div>
