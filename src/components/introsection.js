@@ -8,9 +8,9 @@ import { currentLanguage } from '../utils/globalVars';
 const IntroSection = () => {
     return (
         <div>
-            <h2>{currentLanguage.profileIntroTitle}</h2>
-            <p>{currentLanguage.profileIntroContent.p1}</p>
-            <p>{currentLanguage.profileIntroContent.p2}</p>
+            <h2>{currentLanguage.introSection.title}</h2>
+            <p>{currentLanguage.introSection.content.p1}</p>
+            <p>{currentLanguage.introSection.content.p2}</p>
 
             <div className="skills-section">
                 <h3>Stack</h3>

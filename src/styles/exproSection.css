@@ -1,0 +1,75 @@
+.expro-section {
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.section-title {
+    color: #7b6c9d;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.experience-title {
+    color: #d1c1f4;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.experience-company {
+    color: #e4def0;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-bottom: 0;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+.experience-location-period {
+    color: #b5b2bb;
+    font-size: 15px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.experience-responsibility-title {
+    font-weight: bold;
+}
+
+.experience-timeline {
+    width: 5%;
+}
+
+.experience-content {
+    width: 90%;
+}
+
+.experience-timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.experience-timeline-item-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #7b6c9d;
+}
+
+.experience-timeline-item-bar {
+    width: 2px;
+    flex-grow: 1;
+    background-color: #7b6c9d;
+}

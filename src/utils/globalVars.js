@@ -21,13 +21,9 @@ export let currentLanguage = DEFAULT_LANGUAGE;
 
 // 更新当前语言
 export const handleCurrentLanguage = (lang) => {
-    // console.log(Object.keys(LANGUAGES_OPTIONS).includes(lang));
-    // console.log(lang);
-
 
     if (Object.keys(LANGUAGES_OPTIONS).includes(lang)) {
         currentLanguage = LANGUAGES_OPTIONS[lang];
     }
 
-    // console.log(currentLanguage);
 };

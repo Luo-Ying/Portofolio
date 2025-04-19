@@ -1,5 +1,7 @@
 import PersonalInfo from '../components/personalInfo'
 import IntroSection from '../components/introsection'
+import ExproSection from '../components/exproSection'
+
 const HomePage = () => {
   return (
     <div className="accueil-content">
@@ -13,10 +15,7 @@ const HomePage = () => {
         </div>
 
         <div className="featured-projects">
-          <h3>Exp (Pro)</h3>
-          <div className="project-preview">
-            <p>Description de mon expérience professionnelle, incluant les technologies utilisées et les responsabilités assumées.</p>
-          </div>
+          <ExproSection />
 
           <h3>Projet (créé en avant)</h3>
           <div className="project-preview">
