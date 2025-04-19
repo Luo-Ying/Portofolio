@@ -1,5 +1,6 @@
 const dict = {
     en: {
+        language: "en",
         activeTabHome: "Home",
         activeTabProjects: "Projects",
         activeTabContact: "Contact",
@@ -30,6 +31,7 @@ const dict = {
         }
     },
     fr: {
+        language: "fr",
         activeTabHome: "Accueil",
         activeTabProjects: "Projets",
         activeTabContact: "Contact",
@@ -60,6 +62,7 @@ const dict = {
         }
     },
     zh: {
+        language: "zh",
         activeTabHome: "首页",
         activeTabProjects: "项目",
         activeTabContact: "联系",

@@ -8,7 +8,7 @@ const ExproSection = () => {
             <h3>{currentLanguage.exproSection.title}</h3>
             <div>
                 {currentLanguage.exproSection.experiences.map((experience, index) => (
-                    <div className="experience-container">
+                    <div className="experience-container" key={index}>
                         <div className="experience-timeline">
                             <div className="experience-timeline-item">
                                 <div className="experience-timeline-item-circle" />
