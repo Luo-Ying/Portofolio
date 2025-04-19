@@ -1,6 +1,7 @@
 import githubIcon from '../assets/github-icon.png'
 import profilPhoto from '../assets/profil_linkdin.jpg'
 import linkedinIcon from '../assets/linkedin.png'
+import { currentLanguage } from '../utils/globalVars';
 
 const PersonalInfo = () => {
     return (
@@ -11,13 +12,13 @@ const PersonalInfo = () => {
                 </div>
             </div>
             <div className="profile-info">
-                <div className='name'>Yingqi LUO</div>
-                <p className="title">Développeur Web Full Stack</p>
+                <div className='name'>{currentLanguage.profileName}</div>
+                <p className="title">{currentLanguage.profileTitle}</p>
                 <div style={{ display: 'flex', alignItems: 'center', marginBottom: '0.5rem' }}>
                     <svg style={{ width: '20px', height: '20px', marginRight: '8px', fill: '#f4f4f4' }} viewBox="0 0 24 24">
                         <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                     </svg>
-                    <span style={{ color: '#ccc8c8' }}>Monpellier, France</span>
+                    <span style={{ color: '#ccc8c8' }}>{currentLanguage.profileLocation}</span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', marginBottom: '0.5rem' }}>
                     <svg style={{ width: '20px', height: '20px', marginRight: '8px', fill: '#f4f4f4' }} viewBox="0 0 24 24">

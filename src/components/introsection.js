@@ -1,13 +1,14 @@
 import reactIcon from '../assets/React.png'
 import nodejsIcon from '../assets/nodejs.png'
 import mongodbIcon from '../assets/MongoDB.png'
+import { currentLanguage } from '../utils/globalVars';
 
 const IntroSection = () => {
     return (
         <div>
-            <h2>Introduction</h2>
-            <p>Je suis une Ingénieure Full Stack passionnée avec plus de 2 ans d'expérience dans le développement d'applications web et mobiles.</p>
-            <p>Experte en développement front-end et back-end, forte d'une expérience en conception d'API et de services, j'ai conçu et implémenté des architectures modulaires, optimisé les performances et assuré la qualité du code.</p>
+            <h2>{currentLanguage.profileIntroTitle}</h2>
+            <p>{currentLanguage.profileIntroContent.p1}</p>
+            <p>{currentLanguage.profileIntroContent.p2}</p>
 
             <div className="skills-section">
                 <h3>Stack</h3>

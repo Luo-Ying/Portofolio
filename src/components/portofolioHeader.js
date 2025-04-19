@@ -11,11 +11,8 @@ const PortofolioHeader = ({ activeTab, fnSetActiveTab }) => {
     useEffect(() => { }, [currentLanguageEffect]);
 
     const handleLanguageEffect = (lang) => {
-        // fnSetActiveTab(currentLanguage.activeTabHome)
         handleCurrentLanguage(lang)
         setCurrentLanguageEffect(currentLanguage)
-
-        console.log("activeTabEffect", activeTabEffect);
 
         if (activeTabEffect === "home") {
             fnSetActiveTab(currentLanguage.activeTabHome)
@@ -27,8 +24,6 @@ const PortofolioHeader = ({ activeTab, fnSetActiveTab }) => {
     }
 
     const handleActiveTabEffect = (active, tab) => {
-        console.log("tab", tab);
-
         setActiveTabEffect(active)
         fnSetActiveTab(tab)
     }
