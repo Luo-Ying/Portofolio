@@ -28,6 +28,15 @@ const dict = {
                     ]
                 }
             ]
+        },
+        projectsSection: {
+            title: "Some of my projects",
+            projects: {
+                professionalProjects: [],
+                universityProjects: [],
+                personalProjects: []
+            },
+            moreProjects: "More projects"
         }
     },
     fr: {
@@ -59,6 +68,22 @@ const dict = {
                     ]
                 }
             ]
+        },
+        projectsSection: {
+            title: "Quelques uns de mes projets",
+            projects: {
+                professionalProjects: [
+                    {
+                        title: "Développement Full-Stack ReactJS et Node.js d’un client métier spécialisé pour la gestion vidéo",
+                        imagePreviw: "../assets/projectIMGs/spectre/test.png",
+                        images: [],
+                        Github: "..."
+                    }
+                ],
+                universityProjects: [],
+                personalProjects: []
+            },
+            moreProjects: "Plus de projets"
         }
     },
     zh: {
@@ -90,6 +115,15 @@ const dict = {
                     ]
                 }
             ]
+        },
+        projectsSection: {
+            title: "一些我实现的项目",
+            projects: {
+                professionalProjects: [],
+                universityProjects: [],
+                personalProjects: []
+            },
+            moreProjects: "更多项目"
         }
     }
 }

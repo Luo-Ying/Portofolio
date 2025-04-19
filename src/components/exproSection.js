@@ -1,11 +1,11 @@
 import { currentLanguage } from "../utils/globalVars";
 import "../styles/exproSection.css";
 import React from 'react';
-
+import TitleSectionSeparator from "./titleSectionSeparator";
 const ExproSection = () => {
     return (
-        <div>
-            <h3>{currentLanguage.exproSection.title}</h3>
+        <div className="expro-section">
+            <TitleSectionSeparator title={currentLanguage.exproSection.title} />
             <div>
                 {currentLanguage.exproSection.experiences.map((experience, index) => (
                     <div className="experience-container" key={index}>
