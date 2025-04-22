@@ -1,0 +1,25 @@
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    overflow-x: auto;
+    max-width: 100%;
+    padding: 20px 0;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border-radius: 8px;
+    background-color: #353b45;
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+.projects-container-inner {
+    display: flex;
+    gap: 20px;
+    min-width: 100%;
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}

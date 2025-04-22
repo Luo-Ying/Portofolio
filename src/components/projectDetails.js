@@ -28,7 +28,21 @@ const ProjectDetailsPage = ({ project, setProjectSelectedToDisplay, pathAccessed
 
             <div className='project-details-content-title'>  {project.title[currentLanguage.language]} </div>
             <div className='project-details-content-organization'><a href={project.organization.link} target='_blank' rel='noopener noreferrer'>{project.organization.name[currentLanguage.language]}</a></div>
-            <p>{project.introduction[currentLanguage.language]}</p>
+            <div className='project-details-content-introduction'><p>{project.introduction[currentLanguage.language]}</p></div>
+            <div className='project-details-content-details-description'>
+                <p>{project.detailsDescription.sentence[currentLanguage.language]}</p>
+                <ul className='project-details-content-details-description-list'>
+                    {project.detailsDescription.services.map((service, index) => (
+                        <li key={index}>{service[currentLanguage.language]}</li>
+                    ))}
+                </ul>
+            </div>
+            <div className='project-details-content-technologies'>
+                {project.technologies.map((technology, index) => (
+                    <div key={index} className="technologies-card"><img src={technology.icone} alt={technology.name} className='technologies-icon' /> {technology.name}</div>
+                ))}
+
+            </div>
         </div>
     )
 
