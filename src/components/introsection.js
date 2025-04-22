@@ -3,6 +3,7 @@ import nodejsIcon from '../assets/nodejs.png'
 import mongodbIcon from '../assets/MongoDB.png'
 import pythonIcon from '../assets/python.png'
 import postgreSQLIcon from '../assets/postgresql.svg'
+import flutterIcon from '../assets/fluttericon.svg'
 import { currentLanguage } from '../utils/globalVars';
 
 const IntroSection = () => {
@@ -13,9 +14,10 @@ const IntroSection = () => {
             <p>{currentLanguage.introSection.content.p2}</p>
 
             <div className="skills-section">
-                <h3>Stack</h3>
+                <h3>{currentLanguage.introSection.technologies}</h3>
                 <div className="skills-container">
                     <div className="skill-card"><img src={reactIcon} alt="react" className="skill-icon" /> React</div>
+                    <div className="skill-card"><img src={flutterIcon} alt="flutter" className="skill-icon" /> Flutter</div>
                     <div className="skill-card"><img src={nodejsIcon} alt="node.js" className="skill-icon" />Node.js</div>
                     <div className="skill-card"><img src={pythonIcon} alt="Python" className="skill-icon" />Python</div>
                     <div className="skill-card"><img src={mongodbIcon} alt="mongodb" className="skill-icon" />MongoDB</div>

@@ -15,11 +15,11 @@ const PortofolioHeader = ({ activeTab, fnSetActiveTab }) => {
         setCurrentLanguageEffect(currentLanguage)
 
         if (activeTabEffect === "home") {
-            fnSetActiveTab(currentLanguage.activeTabHome)
+            fnSetActiveTab(currentLanguage.activeTabHome, false)
         } else if (activeTabEffect === "projects") {
-            fnSetActiveTab(currentLanguage.activeTabProjects)
+            fnSetActiveTab(currentLanguage.activeTabProjects, false)
         } else if (activeTabEffect === "contact") {
-            fnSetActiveTab(currentLanguage.activeTabContact)
+            fnSetActiveTab(currentLanguage.activeTabContact, false)
         }
     }
 

@@ -1,0 +1,60 @@
+.project-details-content {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    padding: 20px;
+    padding-top: 80px;
+    position: fixed;
+}
+
+.return-btn {
+    position: relative;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.go-back-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.project-details-span-path-accessed {
+    color: #757373;
+    font-size: 16px;
+}
+
+.project-details-content-path-accessed {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.project-details-content-title {
+    color: #000000;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.project-details-content-organization {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-bottom: 30px;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+.project-details-content p {
+    color: #000;
+}

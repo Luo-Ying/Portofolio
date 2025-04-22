@@ -64,10 +64,11 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #1e2228ef;
+  background-color: #1e2228;
   color: white;
   padding: 1rem 2rem;
   text-align: center;
+  z-index: 1500;
 }
 
 .portfolio-header h1 {
@@ -360,8 +361,8 @@ body {
   position: relative;
   border-radius: 12px;
   overflow: hidden;
-  width: 30%;
-  height: 30%;
+  width: 300px;
+  height: 320px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -460,14 +461,6 @@ body {
   background-color: #4fa8d1;
 }
 
-/* 页脚样式 */
-.portfolio-footer {
-  background-color: #1e2228;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}
-
 /* 响应式设计更新 */
 @media (max-width: 100%) {
   .main-nav {
@@ -561,4 +554,23 @@ body {
   color: #61dafb;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.card-project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  border-radius: 12px;
+  z-index: 2;
 }
