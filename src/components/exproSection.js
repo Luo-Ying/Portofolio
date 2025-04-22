@@ -17,7 +17,8 @@ const ExproSection = () => {
                         </div>
                         <div className="experience-content" key={index}>
                             <div className="experience-title">{experience.title}</div>
-                            <div className="experience-company"><a href="https://www.orkis.com/" target="_blank" rel="noopener noreferrer">{experience.company}</a></div>
+                            <div className="experience-company"><a href={experience.company.link} target="_blank" rel="noopener noreferrer">{experience.company.name}</a></div>
+                            <p>{experience.company.description}</p>
                             <div className="experience-location-period">
                                 <svg style={{ width: '20px', height: '20px', marginRight: '8px', fill: '#ffffff', verticalAlign: 'middle' }} viewBox="0 0 24 24">
                                     <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM5 6V5h14v1H5z" />
