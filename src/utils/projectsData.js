@@ -18,12 +18,12 @@ export const projects = {
                 link: "https://www.orkis.com/",
             },
             imagePreview: "/images/spectre/imagePreview.jpeg",
+            images: [],
             simpleInfo: {
                 "en": "Development of a full-stack web application with ReactJS and Python Flask for video management",
                 "fr": "Développement full-stack en ReactJS et Python Flask d'une application web constituant une plateforme de gestion vidéo.",
                 "zh": "使用ReactJS和Python Flask开发的全栈视频管理平台网络应用"
             },
-            images: [],
             introduction: {
                 "en": "Spectre is a video management web application, whose objective is to enable searching within the speech of videos present in the database. This application allows users to upload videos to their database and manage them. Users can then search within videos thanks to a speech-to-text service (SpeechBrain) integrated into the application. The goal is to find key moments in videos containing information corresponding to the keyword entered by the user.",
                 "fr": "Spectre est une application web de gestion vidéo, dont l'objectif est de permettre la recherche dans les paroles des vidéos présentes dans la base de données. Cette application permet aux utilisateurs de uploader des vidéos dans leur base de données et de les gérer. Ensuite, les utilisateurs peuvent effectuer des recherches dans les vidéos grâce à un service de speech-to-text (SpeechBrain) intégré à l'application. L'objectif est de retrouver les moments clés des vidéos contenant les informations correspondant au mot-clé saisi par l'utilisateur.",
@@ -109,12 +109,30 @@ export const projects = {
                 link: "https://www.orkis.com/",
             },
             imagePreview: "/images/AjarisUploaderMobile/imagePreview.png",
+            images: [
+                "/images/AjarisUploaderMobile/Splash.png",
+                "/images/AjarisUploaderMobile/List sites.png",
+                "/images/AjarisUploaderMobile/users in site.png",
+                "/images/AjarisUploaderMobile/site selection.png",
+                "/images/AjarisUploaderMobile/Add site - site name.jpeg",
+                "/images/AjarisUploaderMobile/Add site - site url.jpeg",
+                "/images/AjarisUploaderMobile/Add site - user id.jpeg",
+                "/images/AjarisUploaderMobile/Site ajouté.jpeg",
+                "/images/AjarisUploaderMobile/Upload - 1.jpeg",
+                "/images/AjarisUploaderMobile/Upload - 2.jpeg",
+                "/images/AjarisUploaderMobile/Upload - 3.jpeg",
+                "/images/AjarisUploaderMobile/Upload - 4.jpeg",
+                "/images/AjarisUploaderMobile/Upload - 5.jpeg",
+                "/images/AjarisUploaderMobile/Upload - 6.jpeg",
+                "/images/AjarisUploaderMobile/Upload - 7.jpeg",
+                "/images/AjarisUploaderMobile/Upload - 8.jpeg",
+                "/images/AjarisUploaderMobile/Upload - 9.jpeg",
+            ],
             simpleInfo: {
                 "en": "Development with Flutter of a mobile application, available on both Android and iOS.",
                 "fr": "Développement d'une application mobile avec Flutter, disponible sous Android et iOS.",
                 "zh": "使用Flutter开发了一个适用于Android和iOS的移动应用程序"
             },
-            images: [],
             introduction: {
                 "en": "Ajaris Uploader Mobile is an extension of the main product Ajaris (a DAM – Digital Asset Management solution from Orkis). This mobile application mainly provides a service allowing Orkis clients to transfer their multimedia files from their phone to their own server. It is available on Android and iOS thanks to the Flutter technology.",
                 "fr": "Ajaris Uploader Mobile est une extension du produit principal Ajaris (une application de la solution DAM – Digital Asset Management – d'Orkis). Cette application mobile fournit principalement un service permettant aux clients d'Orkis de transmettre leurs fichiers multimédia depuis leur téléphone vers leur propre serveur. Elle est disponible sous Android et iOS grâce à la technologie Flutter.",
@@ -167,8 +185,8 @@ export const projects = {
             }
         }
     ],
+    personal: [],
     university: [],
-    personal: []
 };
 
 export default projects;

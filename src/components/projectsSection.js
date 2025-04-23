@@ -30,11 +30,11 @@ const ProjectsSection = ({ showProjectDetails }) => {
                             <ProjectCard project={project} />
                         </div>
                     ))}
-                    {projectsList.map((project, index) => (
+                    {/* {projectsList.map((project, index) => (
                         <div key={index} onClick={() => showProjectDetails(project)} className="project-card-container">
                             <ProjectCard project={project} />
                         </div>
-                    ))}
+                    ))} */}
                 </div>
             </div>
         </div>
