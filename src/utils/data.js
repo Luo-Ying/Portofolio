@@ -3,7 +3,7 @@ const data = {
     github: "...",
     title: {
         "en": "Ajaris Uploader Mobile - A mobile application for multimedia files management",
-        "fr": "Ajaris Uploader Mobile - Une application mobile destinée à la gestion de fichiers multimédia.",
+        "fr": "",
         "zh": "Ajaris Uploader Mobile - 一个用于多媒体文件管理的移动应用程序",
     },
     logo: "/images/company building.png",

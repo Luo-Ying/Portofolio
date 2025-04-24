@@ -40,7 +40,8 @@ const dict = {
         projectsSection: {
             title: "Some of my projects",
             moreProjects: "More projects"
-        }
+        },
+        projectPageTitle: "My projects"
     },
     fr: {
         language: "fr",
@@ -81,7 +82,8 @@ const dict = {
         projectsSection: {
             title: "Quelques uns de mes projets",
             moreProjects: "Plus de projets"
-        }
+        },
+        projectPageTitle: "Mes projets"
     },
     zh: {
         language: "zh",
@@ -122,7 +124,8 @@ const dict = {
         projectsSection: {
             title: "一些我实现的项目",
             moreProjects: "更多项目"
-        }
+        },
+        projectPageTitle: "我的项目展示"
     }
 }
 
