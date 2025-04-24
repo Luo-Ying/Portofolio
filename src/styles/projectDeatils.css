@@ -157,8 +157,8 @@
 }
 
 .project-details-content-images-image {
-    width: 10%;
-    height: 10%;
+    /* width: 10%;
+    height: 10%; */
     margin: auto;
     object-fit: cover;
     border-radius: 8px;

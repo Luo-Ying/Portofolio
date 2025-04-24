@@ -18,6 +18,7 @@ export const projects = {
                 link: "https://www.orkis.com/",
             },
             imagePreview: "/images/spectre/Spectre 3.png",
+            imagesMinSize: "30%",
             images: [
                 "/images/spectre/Spectre 1.png",
                 "/images/spectre/Spectre 2.png",
@@ -113,6 +114,7 @@ export const projects = {
                 link: "https://www.orkis.com/",
             },
             imagePreview: "/images/AjarisUploaderMobile/imagePreview.png",
+            imagesMinSize: "10%",
             images: [
                 "/images/AjarisUploaderMobile/Splash.png",
                 "/images/AjarisUploaderMobile/List sites.png",

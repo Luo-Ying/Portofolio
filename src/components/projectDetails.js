@@ -14,7 +14,7 @@ const ProjectDetailsPage = ({ project, setProjectSelectedToDisplay, pathAccessed
 
 
     const fnOnMouseEnter = (e) => {
-        e.target.style.transform = 'scale(1.1)';
+        e.target.style.transform = `scale(1.1)`;
         e.target.style.zIndex = '1';
         // Blur all other images
         const images = e.target.parentElement.getElementsByTagName('img');
@@ -26,7 +26,7 @@ const ProjectDetailsPage = ({ project, setProjectSelectedToDisplay, pathAccessed
     }
 
     const fnOnMouseLeave = (e) => {
-        e.target.style.transform = 'scale(1)';
+        e.target.style.transform = `scale(1)`;
         e.target.style.zIndex = '0';
         // Remove blur from all images
         const images = e.target.parentElement.getElementsByTagName('img');
@@ -72,12 +72,14 @@ const ProjectDetailsPage = ({ project, setProjectSelectedToDisplay, pathAccessed
                 {
                     project.images.length > 0 &&
                     <div className='project-details-content-images'>
+                        {console.log("project.imagesMinSize", project.imagesMinSize)}
                         {project.images.map((image, index) => (
                             <img
                                 key={index}
                                 src={image}
                                 alt={`Project image ${index + 1}`}
                                 className='project-details-content-images-image'
+                                style={{ width: `${project.imagesMinSize}`, height: `${project.imagesMinSize}` }}
                                 onMouseEnter={(e) => fnOnMouseEnter(e)}
                                 onMouseLeave={(e) => fnOnMouseLeave(e)}
                                 onClick={() => { setImageToDisplay(image); }}

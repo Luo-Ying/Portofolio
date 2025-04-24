@@ -36,7 +36,12 @@ const HomePage = ({ projectSelectedToDisplay, setProjectSelectedToDisplay }) => 
         </div>
       </div>
       <div>
-        {projectSelectedToDisplay && <ProjectDetailsPage project={projectSelectedToDisplay} setProjectSelectedToDisplay={setProjectSelectedToDisplay} pathAccessed={currentLanguage.activeTabHome} />}
+        {projectSelectedToDisplay &&
+          <ProjectDetailsPage
+            project={projectSelectedToDisplay}
+            setProjectSelectedToDisplay={setProjectSelectedToDisplay}
+            pathAccessed={currentLanguage.activeTabHome}
+          />}
       </div>
     </div>
   )
