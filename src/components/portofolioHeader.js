@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { handleCurrentLanguage, currentLanguage } from '../utils/globalVars';
 import DropDownLanguage from './dropDownLanguage';
 import LanguageSelector from './languageSelector';
+import downloadIcon from '../assets/telecharger.png';
+
 const PortofolioHeader = ({ activeTab, fnSetActiveTab }) => {
 
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -45,6 +47,11 @@ const PortofolioHeader = ({ activeTab, fnSetActiveTab }) => {
 
     return (
         <header className="portfolio-header">
+
+            <div className="cv-download-link">
+                <a>{windowWidth >= 768 ? <img src={downloadIcon} alt="download" /> : ""}CV</a>
+            </div>
+
             <nav className="main-nav">
                 <button
                     className={activeTab === currentLanguage.activeTabHome ? 'active' : ''}

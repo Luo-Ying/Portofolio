@@ -2,9 +2,9 @@ const data = {
     links: [],
     github: "...",
     title: {
-        "en": "Ajaris Uploader Mobile - A mobile application for multimedia files management",
-        "fr": "",
-        "zh": "Ajaris Uploader Mobile - 一个用于多媒体文件管理的移动应用程序",
+        "en": "Object detection for visual contents",
+        "fr": "Détection d'objet pour les contenus visuels",
+        "zh": "用于视觉内容的对象检测",
     },
     logo: "/images/company building.png",
     organization: {
@@ -15,17 +15,20 @@ const data = {
         },
         link: "https://www.orkis.com/",
     },
-    imagePreview: "/images/spectre/imagePreview.jpeg",
+    imagePreview: "/images/Object detection/Object detection.png",
+    imagesMinSize: "30%",
+    images: [
+        "/images/Object detection/Object detection.png",
+    ],
     simpleInfo: {
-        "en": "Development with Flutter of a mobile application, available on both Android and iOS.",
-        "fr": "Développement d'une application mobile avec Flutter, disponible sous Android et iOS.",
-        "zh": "使用Flutter开发了一个适用于Android和iOS的移动应用程序"
+        "en": "A Python program integrating the YOLOv8 model has been developed and integrated into a FastAPI API.",
+        "fr": "Un programme Python intégrant le modèle YOLOv8 a été développé et intégré dans une API construite avec FastAPI.",
+        "zh": "一个集成了YOLOv8模型的Python程序，同时也被集成到一个用FastAPI构建的API中。"
     },
-    images: [],
     introduction: {
-        "en": "Ajaris Uploader Mobile is an extension of the main product Ajaris (a DAM – Digital Asset Management solution from Orkis). This mobile application mainly provides a service allowing Orkis clients to transfer their multimedia files from their phone to their own server. It is available on Android and iOS thanks to the Flutter technology.",
-        "fr": "Ajaris Uploader Mobile est une extension du produit principal Ajaris (une application de la solution DAM – Digital Asset Management – d'Orkis). Cette application mobile fournit principalement un service permettant aux clients d'Orkis de transmettre leurs fichiers multimédia depuis leur téléphone vers leur propre serveur. Elle est disponible sous Android et iOS grâce à la technologie Flutter.",
-        "zh": "Ajaris Uploader Mobile是主产品Ajaris（由Orkis提供的DAM – Digital Asset Management解决方案）的扩展。这个移动应用程序主要提供一个服务，允许Orkis客户将他们的多媒体文件从手机传输到他们自己的服务器。它通过Flutter技术在Android和iOS上可用。"
+        "en": "This project is a work I did within the Orkis company. The goal was to add a new service to detect objects present in visual contents (images, videos, etc.) within the Ajaris suite — a DAM (Digital Asset Management) solution, main product of Orkis. This service was designed to later integrate features such as automatic file indexing, adding labels or managing metadata, in order to optimize multimedia file management and enrich the services offered by Orkis.",
+        "fr": "Ce projet est un travail que j’ai réalisé au sein de l’entreprise Orkis. L’objectif était d’ajouter un nouveau service permettant de détecter les objets présents dans les contenus visuels (images, vidéos, etc.) au sein de la suite Ajaris — une solution DAM (Digital Asset Management), produit principal d’Orkis. Ce service a été conçu dans la perspective d’intégrer ultérieurement des fonctionnalités telles que l’indexation automatique des fichiers, l’ajout d’étiquettes ou encore la gestion des métadonnées, dans le but d’optimiser la gestion des fichiers multimédias et d’enrichir les services proposés par Orkis.",
+        "zh": "这个项目是我作为Orkis公司的一名员工完成的。目标是在原有的产品API中添加一个新服务，用于检测视频、图像等视觉内容中的对象。这个服务旨在后期为Orkis的DAM（数字资产管理）解决方案 -- Ajaris添加功能，例如自动索引文件、添加标签或管理元数据，以优化多媒体文件的管理并丰富Orkis提供的服务。"
     },
     detailsDescription: {
         sentence: {
@@ -35,41 +38,53 @@ const data = {
         },
         services: [
             {
-                "en": "A lightweight database management system, using SQLite on a portable system, allowing to manage transfer information, including different accounts, servers and files sent.",
-                "fr": "Un système de gestion de bases de données léger, utilisant SQLite sur un système portable, permettant de gérer les informations relatives aux transferts, notamment celles des différents comptes, des serveurs ainsi que des fichiers envoyés.",
-                "zh": "一个轻量级的数据库管理系统，使用SQLite在便携系统上运行，允许管理传输信息，包括不同的账户、服务器和发送的文件。"
+                "en": "A FastAPI API, allowing to manage requests and ensure communication between the front-end and the Elasticsearch databases.",
+                "fr": "Une API développée avec FastAPI, permettant de gérer les requêtes et d'assurer la communication entre le front-end et les bases de données Elasticsearch.",
+                "zh": "一个用FastAPI开发的API，允许管理请求并确保前端和Elasticsearch数据库之间的通信。"
             },
             {
-                "en": "A transfer management system and file display on the screen, integrating a compression mechanism and a deferred loading (lazy load) service. This system is designed to handle specific cases, such as launching a large transfer by the user (in terms of number or size of files), in order to optimize performance based on the variable capabilities of mobile devices.",
-                "fr": "Un système de gestion des transferts et de l'affichage des fichiers à l'écran, intégrant un mécanisme de compression ainsi qu'un service de chargement différé (lazy load). Ce système est conçu pour gérer des cas particuliers, tels que le lancement d'un transfert volumineux par l'utilisateur (en termes de nombre ou de taille de fichiers), afin d'optimiser les performances en fonction des capacités variables des appareils mobiles.",
-                "zh": "一个传输管理系统和屏幕上的文件显示，集成了一个压缩机制和一个延迟加载（懒加载）服务。该系统设计用于处理特定情况，例如用户启动大量传输（在文件数量或大小方面），以优化性能，根据移动设备的不同能力。"
+                "en": "- A FTP service is installed on the server to allow the retrieval of files to be processed, depending on the requested services. This same service also allows retrieving files processed by the programs. Once the processing is finished, the API sends a signal to the client to indicate that the result is available on the FTP server. The client can then retrieve the file using the corresponding mission identifier.",
+                "fr": "- Un service FTP est installé sur le serveur afin de permettre la récupération des fichiers à traiter, en fonction des services demandés. Ce même service permet également de récupérer les fichiers traités par les programmes. Une fois le traitement terminé, l’API envoie un signal au client pour indiquer que le résultat est disponible sur le serveur FTP. Le client peut alors récupérer le fichier en utilisant l’identifiant de mission correspondant.",
+                "zh": "- 一个FTP服务安装在服务器上，允许根据请求的服务检索要处理的文件。这个服务还允许检索被程序处理过的文件。一旦处理完成，API会向客户端发送信号，表示结果已可在FTP服务器上获取。客户端可以使用相应的任务标识符检索文件。"
             },
             {
-                "en": "A file state management system, allowing to follow and control the actions performed by the user, such as launching a transfer, pausing, canceling or resuming an interrupted transfer. This system also allows managing the states of files according to their current situation, for example: files sent successfully, waiting to be sent, or having failed during the transfer.",
-                "fr": "Un système de gestion des états des fichiers, permettant de suivre et de contrôler les actions effectuées par l’utilisateur, telles que le lancement d’un transfert, la mise en pause, l’annulation ou la reprise d’un envoi interrompu. Ce système permet également de gérer les états des fichiers selon leur situation actuelle, par exemple : fichiers envoyés avec succès, en attente d’envoi, ou ayant échoué lors de l’envoi.",
-                "zh": "一个文件状态管理系统，允许跟踪和控制用户执行的操作，例如启动传输、暂停、取消或恢复中断的传输。该系统还允许根据文件的当前情况管理文件状态，例如：文件发送成功、等待发送或传输失败。"
+                "en": "- A Python API developed with FastAPI manages requests related to all additional services offered by Ajaris. It also allows triggering the execution of programs installed on the server, placing them in a processing queue with a mission identifier. Once the mission is added to the queue, the API returns the mission identifier to the client. The latter can then use this identifier to retrieve the result once the processing is finished.",
+                "fr": "- Une API Python développée avec FastAPI gère les requêtes liées à l’ensemble des services supplémentaires proposés par Ajaris. Elle permet également de déclencher l’exécution des programmes installés sur le serveur, en les plaçant dans une file d’attente de traitement, avec un identifiant de mission associé. Une fois la mission ajoutée à la file, l’API retourne l’identifiant de mission au client. Ce dernier pourra ensuite utiliser cet identifiant pour récupérer le résultat une fois le traitement terminé.",
+                "zh": "- 一个用FastAPI开发的Python API管理与Ajaris提供的所有附加服务相关的请求。它还允许触发安装在服务器上的程序的执行，将它们放置在处理队列中，并分配一个任务标识符。一旦任务被添加到队列中，API会返回任务标识符给客户端。后者可以随后使用该标识符检索结果，一旦处理完成。"
             },
             {
-                "en": "An asynchronous data synchronization system, allowing to synchronize data and file states online and offline.",
-                "fr": "Un système de gestion de l’asynchronisation, permettant de synchroniser les données et les états des fichiers en ligne et hors ligne.",
-                "zh": "一个异步数据同步系统，允许在在线和离线状态下同步数据和文件状态。"
+                "en": "- A YOLOv8 object detection model, trained on a small dataset of 80 classes (for a proof of concept – PoC), is integrated into the object detection service. This model allows processing visual contents by returning, in JSON format, the detected objects and their location within these contents.",
+                "fr": "- Un modèle de détection d’objets YOLOv8 (You Only Look Once), issu de la librairie Ultralytics et entraîné sur un petit jeu de données comprenant 80 classes (dans le cadre d’une preuve de concept – PoC), est intégré dans le service de détection d’objets. Ce modèle permet de traiter les fichiers contenant des contenus visuels en retournant, au format JSON, les objets détectés ainsi que leur localisation dans ces contenus.",
+                "zh": "- 一个YOLOv8对象检测模型，在小型数据集上训练了80个类（用于概念验证 – PoC），并集成到对象检测服务中。该模型允许处理视觉内容，并以JSON格式返回检测到的对象及其在内容中的位置。"
             },
-            {
-                "en": "A CI/CD system for application deployment, allowing development and testing teams to easily retrieve a new version after each update.",
-                "fr": "Un système de CI/CD pour le déploiement de l'application, permettant aux équipes de développement et de test de récupérer facilement une nouvelle version après chaque mise à jour.",
-                "zh": "一个CI/CD系统用于应用程序部署，允许开发和测试团队在每次更新后轻松检索新版本。"
-            }
         ]
     },
     technologies: [
         {
-            name: "Flutter",
-            icone: "/images/AjarisUploaderMobile/fluttericon.png"
-        }
+            name: "Linux",
+            icone: "/images/Object detection/Linux.svg"
+        },
+        {
+            name: "Python",
+            icone: "/images/Object detection/Python.svg"
+        },
+        {
+            name: "FastAPI",
+            icone: "/images/Object detection/FastAPI.svg"
+        },
+        {
+            name: "",
+            icone: "/images/Object detection/cropped-YOLOv8-removebg-preview-1-300x93.png"
+        },
+        {
+            name: "Ultralytics",
+            icone: "/images/Object detection/Ultralytics.svg"
+        },
     ],
     challenges: {
         "en": "...",
         "fr": "...",
         "zh": "..."
     }
+
 }

@@ -68,6 +68,10 @@ body {
   color: white;
   padding: 1rem 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   z-index: 1500;
 }
 
@@ -79,6 +83,8 @@ body {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin: 0 auto;
+  width: fit-content;
 }
 
 .main-nav button {
@@ -714,4 +720,27 @@ body {
 
 .contact-item-email:hover {
   text-decoration: underline;
+}
+
+.cv-download-link {
+  /* position: fixed; */
+  /* right: 20px;
+  top: 20px; */
+  display: flex;
+  justify-content: left;
+  /* gap: 0.5rem; */
+  width: fit-content;
+  /* padding: 0 10px; */
+
+  /* display: flex; */
+  /* align-items: center; */
+  /* gap: 5px; */
+
+}
+
+.cv-download-link img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  /* margin-top: 25px; */
 }

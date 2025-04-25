@@ -6,7 +6,7 @@ const ContactPage = () => {
     return (
         <div>
             <div className="contact-title">
-                <h1>{currentLanguage.contactPageTitle}</h1>
+                <h1>{currentLanguage.contactPage.title}</h1>
             </div>
             <div className="contact-container">
                 <div className="contact-item">{currentLanguage.contactPage.contact} </div>
