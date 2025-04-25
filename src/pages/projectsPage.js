@@ -4,10 +4,9 @@ import { currentLanguage } from '../utils/globalVars';
 import { projects } from '../utils/projectsData';
 import ProjectCard from '../components/projectCard';
 import ProjectDetailsPage from '../components/projectDetails';
-const ProjectsPage = () => {
+const ProjectsPage = ({ projectSelectedToDisplay, setProjectSelectedToDisplay }) => {
 
   const [projectsList, setProjectsList] = useState([]);
-  const [projectSelectedToDisplay, setProjectSelectedToDisplay] = useState(null);
 
   useEffect(() => {
     setProjectsList(

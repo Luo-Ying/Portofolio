@@ -18,7 +18,7 @@ function App() {
     if (activeTab === currentLanguage.activeTabHome) {
       return <HomePage projectSelectedToDisplay={projectSelectedToDisplay} setProjectSelectedToDisplay={setProjectSelectedToDisplay} />;
     } else if (activeTab === currentLanguage.activeTabProjects) {
-      return <ProjectsPage />;
+      return <ProjectsPage projectSelectedToDisplay={projectSelectedToDisplay} setProjectSelectedToDisplay={setProjectSelectedToDisplay} />;
     } else if (activeTab === currentLanguage.activeTabContact) {
       return <ContactPage />;
     }
