@@ -1,14 +1,28 @@
 import { useEffect, useState } from 'react';
 import { handleCurrentLanguage, currentLanguage } from '../utils/globalVars';
-import frenchFlag from '../assets/france.png';
-import ukFlag from '../assets/united-kingdom.png';
-import chinaFlag from '../assets/china.png';
+import DropDownLanguage from './dropDownLanguage';
+import LanguageSelector from './languageSelector';
 const PortofolioHeader = ({ activeTab, fnSetActiveTab }) => {
+
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const [currentLanguageEffect, setCurrentLanguageEffect] = useState(currentLanguage);
     const [activeTabEffect, setActiveTabEffect] = useState("home");
 
     useEffect(() => { }, [currentLanguageEffect]);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        // Nettoyage de l'écouteur d'événement lors du démontage du composant
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     const handleLanguageEffect = (lang) => {
         handleCurrentLanguage(lang)
@@ -27,6 +41,7 @@ const PortofolioHeader = ({ activeTab, fnSetActiveTab }) => {
         setActiveTabEffect(active)
         fnSetActiveTab(tab)
     }
+
 
     return (
         <header className="portfolio-header">
@@ -50,30 +65,18 @@ const PortofolioHeader = ({ activeTab, fnSetActiveTab }) => {
                     {currentLanguage.activeTabContact}
                 </button>
             </nav>
-            <div className="language-selector">
 
-                <button
-                    onClick={() => handleLanguageEffect('fr')}
-                    className="lang-btn"
-                    style={{ color: currentLanguage.language === "fr" ? '#ffffff' : '#4a4a4a' }}
-                >
-                    <img src={frenchFlag} alt="french flag" className="lang-icon" />FR
-                </button>
-                <button
-                    onClick={() => handleLanguageEffect('en')}
-                    className="lang-btn"
-                    style={{ color: currentLanguage.language === "en" ? '#ffffff' : '#4a4a4a' }}
-                >
-                    <img src={ukFlag} alt="UK flag" className="lang-icon" />EN
-                </button>
-                <button
-                    onClick={() => handleLanguageEffect('zh')}
-                    className="lang-btn"
-                    style={{ color: currentLanguage.language === "zh" ? '#ffffff' : '#4a4a4a' }}
-                >
-                    <img src={chinaFlag} alt="china flag" className="lang-icon" />中文
-                </button>
-            </div>
+            {console.log("window.innerWidth", windowWidth)}
+
+
+            {windowWidth >= 768 && (
+                <LanguageSelector handleLanguageEffect={handleLanguageEffect} />
+            )}
+
+            {windowWidth < 768 && (
+                <DropDownLanguage handleLanguageEffect={handleLanguageEffect} />
+            )}
+
         </header>
     )
 }
