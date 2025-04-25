@@ -663,3 +663,55 @@ body {
 .lang-dropdown-text {
   color: white;
 }
+
+.projects-title,
+.contact-title {
+  margin-top: 20px;
+  text-align: center;
+  color: #61dafb;
+  margin-bottom: 50px;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-container {
+  width: 100%;
+  height: 100%;
+  border-color: gray;
+  border-width: 2px;
+  border-style: solid;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.contact-item-email,
+.contact-item-location {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.contact-item-email {
+  color: #ccc8c8;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.contact-item-email:hover {
+  text-decoration: underline;
+}

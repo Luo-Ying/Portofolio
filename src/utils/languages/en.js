@@ -39,5 +39,9 @@ export const en = {
         moreProjects: "More projects"
     },
     projectPageTitle: "My projects",
-    contactPageTitle: "Contact me"
+    contactPage: {
+        title: "Contact me",
+        contact: "Contact",
+        basedIn: "Based in",
+    }
 }

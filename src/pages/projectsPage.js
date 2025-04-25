@@ -1,5 +1,3 @@
-import '../styles/projectsPage.css';
-
 import { useState, useEffect } from 'react';
 
 import { currentLanguage } from '../utils/globalVars';

@@ -39,5 +39,9 @@ export const zh = {
         moreProjects: "更多项目"
     },
     projectPageTitle: "我的项目展示",
-    contactPageTitle: "联系我"
+    contactPage: {
+        title: "联系我",
+        contact: "联系",
+        basedIn: "位于",
+    }
 }

@@ -40,5 +40,9 @@ export const fr =
         moreProjects: "Plus de projets"
     },
     projectPageTitle: "Mes projets",
-    contactPageTitle: "Contactez-moi"
+    contactPage: {
+        title: "Contactez-moi",
+        contact: "Contact",
+        basedIn: "Basé à",
+    }
 }
