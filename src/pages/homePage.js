@@ -1,13 +1,12 @@
-// import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
-import PersonalInfo from '../components/personalInfo'
-import IntroSection from '../components/introsection'
-import ExproSection from '../components/exproSection'
-import ProjectsSection from '../components/projectsSection'
 import ProjectDetailsPage from '../components/projectDetails'
 import { currentLanguage } from '../utils/globalVars'
-
+import HomePagePCContent from '../components/homePagePCContent'
+import HomePageSmartphoneContent from '../components/homePageSmartphoneContent'
 const HomePage = ({ projectSelectedToDisplay, setProjectSelectedToDisplay }) => {
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const showProjectDetails = (project) => {
     console.log("project", project);
@@ -17,24 +16,31 @@ const HomePage = ({ projectSelectedToDisplay, setProjectSelectedToDisplay }) => 
 
   }
 
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Nettoyage de l'écouteur d'événement lors du démontage du composant
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <div>
-      <div className="accueil-content">
-        <div className="profile-section">
-          <PersonalInfo />
-        </div>
 
-        <div className='more-details-section'>
-          <div className="intro-section">
-            <IntroSection />
-          </div>
+      {windowWidth >= 768 && (
+        <HomePagePCContent showProjectDetails={showProjectDetails} />
+      )}
 
-          <div className="featured-projects">
-            <ExproSection />
-            <ProjectsSection showProjectDetails={showProjectDetails} />
-          </div>
-        </div>
-      </div>
+
+      {windowWidth < 768 && (
+        <HomePageSmartphoneContent showProjectDetails={showProjectDetails} />
+      )}
+
       <div>
         {projectSelectedToDisplay &&
           <ProjectDetailsPage

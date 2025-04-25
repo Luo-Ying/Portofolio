@@ -50,7 +50,7 @@ const ProjectDetailsPage = ({ project, setProjectSelectedToDisplay, pathAccessed
                     <a><span className='project-details-span-path-accessed' style={{ textDecoration: 'underline' }}> {project.title[currentLanguage.language]} </span></a>
                 </div>
             </div>
-            <div className="project-details-content" style={{ overflowY: 'auto' }}>
+            <div className="project-details-content" style={{ overflowY: 'auto', marginTop: '20px' }}>
                 {/* <div className='project-details-content-path-accessed'>
                     <button className="return-btn" onClick={() => { setProjectSelectedToDisplay(null) }}>
                         <img className='go-back-icon' src={goBack} alt="Go back" />
