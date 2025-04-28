@@ -4,12 +4,12 @@ export const zh = {
     activeTabProjects: "项目",
     activeTabContact: "联系",
     profileName: "罗映琦",
-    profileTitle: "全栈开发工程师",
+    profileTitle: "软件工程师",
     profileLocation: "法国, 蒙彼利埃",
     introSection: {
         title: "自我介绍",
         content: {
-            p1: "我是一名全栈工程师，拥有计算机科学硕士学位，在网页和移动应用程序开发方面有超过两年的经验。",
+            p1: "我是一名软件工程师，拥有计算机科学硕士学位，在网页和移动应用程序开发方面有超过两年的经验。",
             p2: "作为前端和后端开发者，凭借丰富的API和服务设计经验和学识，我设计并实现过一些模块化架构，并在优化性能，和确保代码质量的方面有过不少经验。"
         },
         technologies: "技术"
@@ -18,7 +18,7 @@ export const zh = {
         title: "工作经验",
         experiences: [
             {
-                title: "全栈开发工程师",
+                title: "软件工程师",
                 company: {
                     name: "ORKIS",
                     link: "https://www.orkis.com/",
@@ -26,11 +26,6 @@ export const zh = {
                 },
                 location: "法国，艾克斯",
                 period: "2020年五月 - 2022年九月",
-                responsibilities: [
-                    { title: "使用React和Node.js进行全栈开发，打造一个用于视频管理的网页平台", importance: 0.2 },
-                    { title: "使用Flutter开发一个移动客户端", importance: 0.6 },
-                    { title: "设计一个自动视觉内容标签服务", importance: 0.2 }
-                ]
             }
         ]
     },

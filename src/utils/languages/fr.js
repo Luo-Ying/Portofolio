@@ -5,12 +5,12 @@ export const fr =
     activeTabProjects: "Projets",
     activeTabContact: "Contact",
     profileName: "Yingqi LUO",
-    profileTitle: "Développeur Web Full Stack",
+    profileTitle: "Ingénieur Logiciel",
     profileLocation: "Monpellier, France",
     introSection: {
         title: "Introduction",
         content: {
-            p1: "Je suis une ingénieure Full Stack passionnée, titulaire d’un master en informatique, avec plus de deux ans d’expérience dans le développement d’applications web et mobiles.",
+            p1: "Je suis une ingénieure logicielle passionnée, titulaire d’un master en informatique, avec plus de deux ans d’expérience dans le développement d’applications web et mobiles.",
             p2: "Expert en développement front-end et back-end, forte d'une expérience en conception d'API et de services, j'ai conçu et implémenté des architectures modulaires, optimisé les performances et assuré la qualité du code.",
         },
         technologies: "Technologies"
@@ -19,7 +19,7 @@ export const fr =
         title: "Expérience Professionnelle",
         experiences: [
             {
-                title: "Ingénieur Full Stack",
+                title: "Ingénieur Logiciel",
                 company: {
                     name: "ORKIS",
                     link: "https://www.orkis.com/",
@@ -27,11 +27,6 @@ export const fr =
                 },
                 location: "Aix-en-Provence, France",
                 period: "Mai 2022 - Sept 2024",
-                responsibilities: [
-                    { title: "Développement Full-Stack React et Node.js d’un client métier spécialisé pour la gestion vidéo", importance: 0.2 },
-                    { title: "Développement Flutter d’un client mobile", importance: 0.6 },
-                    { title: "Conception d’un service d’étiquetage automatique du contenu visuel", importance: 0.2 }
-                ]
             }
         ]
     },

@@ -48,9 +48,9 @@ const PortofolioHeader = ({ activeTab, fnSetActiveTab }) => {
     return (
         <header className="portfolio-header">
 
-            <div className="cv-download-link">
+            {/* <div className="cv-download-link">
                 <a>{windowWidth >= 768 ? <img src={downloadIcon} alt="download" /> : ""}CV</a>
-            </div>
+            </div> */}
 
             <nav className="main-nav">
                 <button

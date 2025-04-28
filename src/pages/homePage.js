@@ -8,14 +8,6 @@ const HomePage = ({ projectSelectedToDisplay, setProjectSelectedToDisplay, goPro
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  // const showProjectDetails = (project) => {
-  //   // console.log("project", project);
-
-  //   setProjectSelectedToDisplay(project);
-  //   // console.log("projectSelectedToDisplay", projectSelectedToDisplay);
-
-  // }
-
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);

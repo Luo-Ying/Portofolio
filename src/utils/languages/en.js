@@ -4,12 +4,12 @@ export const en = {
     activeTabProjects: "Projects",
     activeTabContact: "Contact",
     profileName: "Yingqi LUO",
-    profileTitle: "Full Stack Developer",
+    profileTitle: "Software Engineer",
     profileLocation: "Monpellier, France",
     introSection: {
         title: "Introduction",
         content: {
-            p1: "I am a passionate Full Stack engineer with a master's degree in computer science and over two years of experience in web and mobile application development.",
+            p1: "I am a passionate software engineer with a master's degree in computer science and over two years of experience in web and mobile application development.",
             p2: "Expert in front-end and back-end development, with strong experience in API and service design, I have designed and implemented modular architectures, optimized performance, and ensured code quality."
         },
         technologies: "Technologies"
@@ -18,7 +18,7 @@ export const en = {
         title: "Professional Experience",
         experiences: [
             {
-                title: "Ingénieur Full Stack",
+                title: "Software Engineer",
                 company: {
                     name: "ORKIS",
                     link: "https://www.orkis.com/",
@@ -26,11 +26,6 @@ export const en = {
                 },
                 location: "Aix-en-Provence, France",
                 period: "May 2022 - Sept 2024",
-                responsibilities: [
-                    { title: "Full-Stack Development with React and Node.js of a video management platform", importance: 0.2 },
-                    { title: "Mobile app development with Flutter", importance: 0.6 },
-                    { title: "Design of an automatic visual content tagging service", importance: 0.2 }
-                ]
             }
         ]
     },
