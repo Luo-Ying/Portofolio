@@ -51,23 +51,14 @@ const ProjectDetailsPage = ({ project, setProjectSelectedToDisplay, pathAccessed
                 </div>
             </div>
             <div className="project-details-content" style={{ overflowY: 'auto', marginTop: '20px' }}>
-                {/* <div className='project-details-content-path-accessed'>
-                    <button className="return-btn" onClick={() => { setProjectSelectedToDisplay(null) }}>
-                        <img className='go-back-icon' src={goBack} alt="Go back" />
-                    </button>
-                    <div>
-                        <a className="return-btn" onClick={() => { setProjectSelectedToDisplay(null) }}>
-                            <span className='project-details-span-path-accessed'>{pathAccessed}</span>
-                        </a>
-                        <span className='project-details-span-path-accessed' > / </span>
-                        <a><span className='project-details-span-path-accessed' style={{ textDecoration: 'underline', cursor: 'pointer' }}> {project.title[currentLanguage.language]} </span></a>
-                    </div>
-                </div> */}
-
 
                 <div className='project-details-content-title'>  {project.title[currentLanguage.language]} </div>
                 <div className='project-details-content-organization'><a href={project.organization.link} target='_blank' rel='noopener noreferrer'>{project.organization.name[currentLanguage.language]}</a></div>
-                <div className='project-details-content-introduction'><p>{project.introduction[currentLanguage.language]}</p></div>
+                <div className='project-details-content-introduction'>
+                    {project.introduction.map((introduction, index) => (
+                        <p key={index}>{introduction[currentLanguage.language]}</p>
+                    ))}
+                </div>
 
                 {
                     project.images.length > 0 &&

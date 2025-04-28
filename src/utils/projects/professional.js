@@ -32,11 +32,13 @@ export const professionalProjects = [
             "fr": "Développement full-stack en ReactJS et Python Flask d'une application web constituant une plateforme de gestion vidéo.",
             "zh": "使用ReactJS和Python Flask开发的全栈视频管理平台网络应用"
         },
-        introduction: {
-            "en": "Spectre is a web application developed within the ORKIS company, to which I actively contributed. This project aims to facilitate content search in dialogues of videos stored in a database. The application allows users to upload and manage their videos, while offering them an advanced text search functionality. Thanks to the integration of the SpeechBrain voice recognition service, users can perform precise searches in video transcriptions to quickly identify key moments containing information related to the entered keywords. This feature significantly improves the accessibility and exploitation of audiovisual content.",
-            "fr": "Spectre est une application web développée au sein de l'entreprise ORKIS, à laquelle j'ai activement contribué. Ce projet a pour objectif de faciliter la recherche de contenu dans les dialogues des vidéos stockées dans une base de données. L'application permet aux utilisateurs de téléverser et de gérer leurs vidéos, tout en leur offrant une fonctionnalité avancée de recherche textuelle. Grâce à l'intégration du service de reconnaissance vocale SpeechBrain, les utilisateurs peuvent effectuer des recherches précises dans les transcriptions des vidéos, afin d'identifier rapidement les moments clés contenant des informations en lien avec les mots-clés saisis. Cette fonctionnalité améliore considérablement l'accessibilité et l'exploitation des contenus audiovisuels.",
-            "zh": "Spectre是一个由Orkis公司开发的应用程序，我积极参与了开发。该项目旨在简化在存储在数据库中的视频对话中搜索内容的过程。该应用程序允许用户上传和管理他们的视频，同时为他们提供先进的文本搜索功能。通过集成语音转文本服务（SpeechBrain），用户可以精确搜索视频的转录内容，快速识别包含与输入关键词相关信息的视频关键时刻。这一功能显著提高了音频视频内容的可访问性和利用率。"
-        },
+        introduction: [
+            {
+                "en": "Spectre is a web application developed within the ORKIS company, to which I actively contributed. This project aims to facilitate content search in dialogues of videos stored in a database. The application allows users to upload and manage their videos, while offering them an advanced text search functionality. Thanks to the integration of the SpeechBrain voice recognition service, users can perform precise searches in video transcriptions to quickly identify key moments containing information related to the entered keywords. This feature significantly improves the accessibility and exploitation of audiovisual content.",
+                "fr": "Spectre est une application web développée au sein de l'entreprise ORKIS, à laquelle j'ai activement contribué. Ce projet a pour objectif de faciliter la recherche de contenu dans les dialogues des vidéos stockées dans une base de données. L'application permet aux utilisateurs de téléverser et de gérer leurs vidéos, tout en leur offrant une fonctionnalité avancée de recherche textuelle. Grâce à l'intégration du service de reconnaissance vocale SpeechBrain, les utilisateurs peuvent effectuer des recherches précises dans les transcriptions des vidéos, afin d'identifier rapidement les moments clés contenant des informations en lien avec les mots-clés saisis. Cette fonctionnalité améliore considérablement l'accessibilité et l'exploitation des contenus audiovisuels.",
+                "zh": "Spectre是一个由Orkis公司开发的应用程序，我积极参与了开发。该项目旨在简化在存储在数据库中的视频对话中搜索内容的过程。该应用程序允许用户上传和管理他们的视频，同时为他们提供先进的文本搜索功能。通过集成语音转文本服务（SpeechBrain），用户可以精确搜索视频的转录内容，快速识别包含与输入关键词相关信息的视频关键时刻。这一功能显著提高了音频视频内容的可访问性和利用率。"
+            }
+        ],
         detailsDescription: {
             sentence: {
                 "en": "This application includes the following services : ",
@@ -146,11 +148,13 @@ export const professionalProjects = [
             "fr": "Développement d'une application mobile avec Flutter, disponible sous Android et iOS.",
             "zh": "使用Flutter开发了一个适用于Android和iOS的移动应用程序"
         },
-        introduction: {
-            "en": "Ajaris Uploader Mobile is a project I developed within the Orkis company. It is an extension of the main product Ajaris, a DAM (Digital Asset Management) solution developed by Orkis. This mobile application mainly provides a service allowing Orkis clients to transfer their multimedia files from their phone to their own server. It is available on Android and iOS thanks to the Flutter technology.",
-            "fr": "Ajaris Uploader Mobile est un projet que j'ai réalisé au sein de l'entreprise Orkis. Il s'agit d'une extension du produit principal Ajaris, une application de la solution DAM (Digital Asset Management) développée par Orkis. Cette application mobile offre principalement un service permettant aux clients d'Orkis de transférer leurs fichiers multimédias depuis leur téléphone vers leur propre serveur. Elle est disponible sur Android et iOS grâce à la technologie Flutter.",
-            "zh": "Ajaris Uploader Mobile是我与Orkis公司合作开发的一个项目。它是主产品Ajaris的扩展，一个由Orkis开发的DAM（数字资产管理）解决方案。这个移动应用程序主要提供一个服务，允许Orkis客户将他们的多媒体文件从手机传输到他们自己的服务器。它在Android和iOS上通过Flutter技术提供支持。"
-        },
+        introduction: [
+            {
+                "en": "Ajaris Uploader Mobile is a project I developed within the Orkis company. It is an extension of the main product Ajaris, a DAM (Digital Asset Management) solution developed by Orkis. This mobile application mainly provides a service allowing Orkis clients to transfer their multimedia files from their phone to their own server. It is available on Android and iOS thanks to the Flutter technology.",
+                "fr": "Ajaris Uploader Mobile est un projet que j'ai réalisé au sein de l'entreprise Orkis. Il s'agit d'une extension du produit principal Ajaris, une application de la solution DAM (Digital Asset Management) développée par Orkis. Cette application mobile offre principalement un service permettant aux clients d'Orkis de transférer leurs fichiers multimédias depuis leur téléphone vers leur propre serveur. Elle est disponible sur Android et iOS grâce à la technologie Flutter.",
+                "zh": "Ajaris Uploader Mobile是我与Orkis公司合作开发的一个项目。它是主产品Ajaris的扩展，一个由Orkis开发的DAM（数字资产管理）解决方案。这个移动应用程序主要提供一个服务，允许Orkis客户将他们的多媒体文件从手机传输到他们自己的服务器。它在Android和iOS上通过Flutter技术提供支持。"
+            }
+        ],
         detailsDescription: {
             sentence: {
                 "en": "This application includes the following services : ",
