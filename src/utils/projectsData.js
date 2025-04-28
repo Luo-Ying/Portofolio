@@ -208,7 +208,7 @@ export const projects = {
                 link: "https://www.orkis.com/",
             },
             imagePreview: "/images/Object detection/Object detection.png",
-            imagesMinSize: "30%",
+            imagesMinSize: "40%",
             images: [
                 "/images/Object detection/Object detection.png",
             ],
