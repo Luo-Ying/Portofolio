@@ -8,13 +8,13 @@ const HomePage = ({ projectSelectedToDisplay, setProjectSelectedToDisplay, goPro
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  const showProjectDetails = (project) => {
-    console.log("project", project);
+  // const showProjectDetails = (project) => {
+  //   // console.log("project", project);
 
-    setProjectSelectedToDisplay(project);
-    console.log("projectSelectedToDisplay", projectSelectedToDisplay);
+  //   setProjectSelectedToDisplay(project);
+  //   // console.log("projectSelectedToDisplay", projectSelectedToDisplay);
 
-  }
+  // }
 
   useEffect(() => {
     const handleResize = () => {
@@ -32,13 +32,13 @@ const HomePage = ({ projectSelectedToDisplay, setProjectSelectedToDisplay, goPro
   return (
     <div>
 
-      {windowWidth >= 768 && (
-        <HomePagePCContent showProjectDetails={showProjectDetails} goProjectsPage={goProjectsPage} />
+      {windowWidth >= 768 && !projectSelectedToDisplay && (
+        <HomePagePCContent showProjectDetails={setProjectSelectedToDisplay} goProjectsPage={goProjectsPage} />
       )}
 
 
-      {windowWidth < 768 && (
-        <HomePageSmartphoneContent showProjectDetails={showProjectDetails} goProjectsPage={goProjectsPage} />
+      {windowWidth < 768 && !projectSelectedToDisplay && (
+        <HomePageSmartphoneContent showProjectDetails={setProjectSelectedToDisplay} goProjectsPage={goProjectsPage} />
       )}
 
       <div>

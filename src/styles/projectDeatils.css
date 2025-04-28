@@ -186,3 +186,7 @@
     max-height: 70%;
     object-fit: contain;
 }
+
+.project-details-content-container {
+    z-index: 2000;
+}

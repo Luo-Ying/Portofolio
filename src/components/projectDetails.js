@@ -50,7 +50,7 @@ const ProjectDetailsPage = ({ project, setProjectSelectedToDisplay, pathAccessed
 
     return (
 
-        <div>
+        <div className='project-details-content-container'>
             <div className='project-details-content-path-accessed-sticky-header'>
                 <button className="return-btn-sticky-header" style={{ paddingRight: "10px" }} onClick={() => { setProjectSelectedToDisplay(null) }}>
                     <img className='go-back-icon' src={goBack} alt="Go back" />
@@ -86,7 +86,6 @@ const ProjectDetailsPage = ({ project, setProjectSelectedToDisplay, pathAccessed
                         )}
 
                         <div className='project-details-content-images'>
-                            {console.log("project.imagesMinSize", project.imagesMinSize)}
                             {project.images.map((image, index) => (
                                 <img
                                     key={index}

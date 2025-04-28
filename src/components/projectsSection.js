@@ -63,10 +63,8 @@ const ProjectsSection = ({ showProjectDetails, goProjectsPage }) => {
                             onMouseLeave={() => setIsHoveredMoreProjects(false)}
                             onClick={() => goProjectsPage(currentLanguage.activeTabProjects, false)}
                         >
-                            <div className="more-projects-button-inner"
-                                style={{ height: '100%' }}>
-                                <div className="more-projects-button-inner-circle-container"
-                                    style={{ height: '100%' }}>
+                            <div className="more-projects-button-inner" >
+                                <div className="more-projects-button-inner-circle-container" >
                                     <div className="more-projects-button-inner-circle">
                                         {isHoveredMoreProjects && (
                                             <div className="more-projects-button-inner-circle-text">

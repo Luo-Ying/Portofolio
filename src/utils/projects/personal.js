@@ -20,9 +20,12 @@ export const personalProjects = [
             },
             link: "https://github.com/Luo-Ying/CloneSportify",
         },
-        imagePreview: "",
-        imagesMinSize: "30%",
+        imagePreview: "/images/CloneSportify/app screenshot 2.png",
+        imagesMinSize: "10%",
         images: [
+            "/images/CloneSportify/app screenshot 1.png",
+            "/images/CloneSportify/app screenshot 2.png",
+
         ],
         simpleInfo: {
             "en": "A simple mobile application, coded in Java for Android, with an API developed in Python using the ZerocICE middleware, and a MongoDB database.",
