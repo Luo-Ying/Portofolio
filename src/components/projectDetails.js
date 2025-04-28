@@ -6,11 +6,14 @@ import { currentLanguage } from '../utils/globalVars';
 import goBack from '../assets/go-back.svg';
 import ImageDisplayOnPage from './imageDisplayOnPage';
 
+import nextButton from "../assets/droite.png"
+
 const ProjectDetailsPage = ({ project, setProjectSelectedToDisplay, pathAccessed }) => {
 
-    console.log("project", project);
 
     const [imageToDisplay, setImageToDisplay] = useState(null);
+
+    const [isHoveredProjectImagesDiv, setIsHoveredProjectImagesDiv] = useState(false);
 
 
     const fnOnMouseEnter = (e) => {
@@ -34,6 +37,16 @@ const ProjectDetailsPage = ({ project, setProjectSelectedToDisplay, pathAccessed
             img.style.filter = 'blur(0px)';
         }
     }
+
+    const handleScroll = (direction) => {
+        const container = document.querySelector('.project-details-content-images');
+        if (container) {
+            container.scrollBy({
+                left: direction === 'left' ? -300 : 300,
+                behavior: 'smooth'
+            });
+        }
+    };
 
     return (
 
@@ -62,20 +75,38 @@ const ProjectDetailsPage = ({ project, setProjectSelectedToDisplay, pathAccessed
 
                 {
                     project.images.length > 0 &&
-                    <div className='project-details-content-images'>
-                        {console.log("project.imagesMinSize", project.imagesMinSize)}
-                        {project.images.map((image, index) => (
-                            <img
-                                key={index}
-                                src={image}
-                                alt={`Project image ${index + 1}`}
-                                className='project-details-content-images-image'
-                                style={{ width: `${project.imagesMinSize}`, height: `${project.imagesMinSize}` }}
-                                onMouseEnter={(e) => fnOnMouseEnter(e)}
-                                onMouseLeave={(e) => fnOnMouseLeave(e)}
-                                onClick={() => { setImageToDisplay(image); }}
-                            />
-                        ))}
+                    <div style={{ position: 'relative' }}
+                        onMouseEnter={() => setIsHoveredProjectImagesDiv(true)}
+                        onMouseLeave={() => setIsHoveredProjectImagesDiv(false)}>
+
+                        {isHoveredProjectImagesDiv && (
+                            <button className="more-projects-button-previous" onClick={() => handleScroll('left')}>
+                                <img src={nextButton} alt="previous" style={{ transform: 'rotate(180deg)', width: 50, height: 50 }} />
+                            </button>
+                        )}
+
+                        <div className='project-details-content-images'>
+                            {console.log("project.imagesMinSize", project.imagesMinSize)}
+                            {project.images.map((image, index) => (
+                                <img
+                                    key={index}
+                                    src={image}
+                                    alt={`Project image ${index + 1}`}
+                                    className='project-details-content-images-image'
+                                    style={{ width: `${project.imagesMinSize}`, height: `${project.imagesMinSize}` }}
+                                    onMouseEnter={(e) => fnOnMouseEnter(e)}
+                                    onMouseLeave={(e) => fnOnMouseLeave(e)}
+                                    onClick={() => { setImageToDisplay(image); }}
+                                />
+                            ))}
+                        </div>
+
+                        {isHoveredProjectImagesDiv && (
+                            <button className="more-projects-button-next" onClick={() => handleScroll('right')}>
+                                <img src={nextButton} alt="next" style={{ width: 50, height: 50 }} />
+                            </button>
+                        )}
+
                     </div>
                 }
 

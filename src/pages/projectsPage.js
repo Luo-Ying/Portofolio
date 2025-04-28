@@ -6,11 +6,9 @@ import ProjectCard from '../components/projectCard';
 import ProjectDetailsPage from '../components/projectDetails';
 const ProjectsPage = ({ projectSelectedToDisplay, setProjectSelectedToDisplay }) => {
 
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const [projectsList, setProjectsList] = useState([]);
 
-  const [nbProjectsPerRow, setNbProjectsPerRow] = useState(1);
 
   useEffect(() => {
     setProjectsList(
@@ -22,22 +20,7 @@ const ProjectsPage = ({ projectSelectedToDisplay, setProjectSelectedToDisplay })
     );
   }, []);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
 
-    window.addEventListener('resize', handleResize);
-
-    // Nettoyage de l'écouteur d'événement lors du démontage du composant
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  useEffect(() => {
-    setNbProjectsPerRow(Math.floor(windowWidth / 300));
-  }, [windowWidth]);
 
   return (
     <div>

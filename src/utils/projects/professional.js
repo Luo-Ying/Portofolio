@@ -232,11 +232,13 @@ export const professionalProjects = [
             "fr": "Un programme Python intégrant le modèle YOLOv8 a été développé et intégré dans une API construite avec FastAPI.",
             "zh": "一个集成了YOLOv8模型的Python程序，同时也被集成到一个用FastAPI构建的API中。"
         },
-        introduction: {
-            "en": "This project is a work I did within the Orkis company. The goal was to add a new service to detect objects present in visual contents (images, videos, etc.) within the Ajaris suite — a DAM (Digital Asset Management) solution, main product of Orkis. This service was designed to later integrate features such as automatic file indexing, adding labels or managing metadata, in order to optimize multimedia file management and enrich the services offered by Orkis.",
-            "fr": "Ce projet est un travail que j’ai réalisé au sein de l’entreprise Orkis. L’objectif était d’ajouter un nouveau service permettant de détecter les objets présents dans les contenus visuels (images, vidéos, etc.) au sein de la suite Ajaris — une solution DAM (Digital Asset Management), produit principal d’Orkis. Ce service a été conçu dans la perspective d’intégrer ultérieurement des fonctionnalités telles que l’indexation automatique des fichiers, l’ajout d’étiquettes ou encore la gestion des métadonnées, dans le but d’optimiser la gestion des fichiers multimédias et d’enrichir les services proposés par Orkis.",
-            "zh": "这个项目是我作为Orkis公司的一名员工完成的。目标是在原有的产品API中添加一个新服务，用于检测视频、图像等视觉内容中的对象。这个服务旨在后期为Orkis的DAM（数字资产管理）解决方案 -- Ajaris添加功能，例如自动索引文件、添加标签或管理元数据，以优化多媒体文件的管理并丰富Orkis提供的服务。"
-        },
+        introduction: [
+            {
+                "en": "This project is a work I did within the Orkis company. The goal was to add a new service to detect objects present in visual contents (images, videos, etc.) within the Ajaris suite — a DAM (Digital Asset Management) solution, main product of Orkis. This service was designed to later integrate features such as automatic file indexing, adding labels or managing metadata, in order to optimize multimedia file management and enrich the services offered by Orkis.",
+                "fr": "Ce projet est un travail que j’ai réalisé au sein de l’entreprise Orkis. L’objectif était d’ajouter un nouveau service permettant de détecter les objets présents dans les contenus visuels (images, vidéos, etc.) au sein de la suite Ajaris — une solution DAM (Digital Asset Management), produit principal d’Orkis. Ce service a été conçu dans la perspective d’intégrer ultérieurement des fonctionnalités telles que l’indexation automatique des fichiers, l’ajout d’étiquettes ou encore la gestion des métadonnées, dans le but d’optimiser la gestion des fichiers multimédias et d’enrichir les services proposés par Orkis.",
+                "zh": "这个项目是我作为Orkis公司的一名员工完成的。目标是在原有的产品API中添加一个新服务，用于检测视频、图像等视觉内容中的对象。这个服务旨在后期为Orkis的DAM（数字资产管理）解决方案 -- Ajaris添加功能，例如自动索引文件、添加标签或管理元数据，以优化多媒体文件的管理并丰富Orkis提供的服务。"
+            }
+        ],
         detailsDescription: {
             sentence: {
                 "en": "This application includes the following services : ",
