@@ -4,7 +4,7 @@ import ProjectDetailsPage from '../components/projectDetails'
 import { currentLanguage } from '../utils/globalVars'
 import HomePagePCContent from '../components/homePagePCContent'
 import HomePageSmartphoneContent from '../components/homePageSmartphoneContent'
-const HomePage = ({ projectSelectedToDisplay, setProjectSelectedToDisplay }) => {
+const HomePage = ({ projectSelectedToDisplay, setProjectSelectedToDisplay, goProjectsPage }) => {
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -33,12 +33,12 @@ const HomePage = ({ projectSelectedToDisplay, setProjectSelectedToDisplay }) => 
     <div>
 
       {windowWidth >= 768 && (
-        <HomePagePCContent showProjectDetails={showProjectDetails} />
+        <HomePagePCContent showProjectDetails={showProjectDetails} goProjectsPage={goProjectsPage} />
       )}
 
 
       {windowWidth < 768 && (
-        <HomePageSmartphoneContent showProjectDetails={showProjectDetails} />
+        <HomePageSmartphoneContent showProjectDetails={showProjectDetails} goProjectsPage={goProjectsPage} />
       )}
 
       <div>

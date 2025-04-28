@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { currentLanguage } from '../utils/globalVars';
+
 const CardProject = ({ project }) => {
     const [isHovered, setIsHovered] = useState(false);
 

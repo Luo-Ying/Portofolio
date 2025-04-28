@@ -16,7 +16,7 @@ function App() {
 
   const renderContent = () => {
     if (activeTab === currentLanguage.activeTabHome) {
-      return <HomePage projectSelectedToDisplay={projectSelectedToDisplay} setProjectSelectedToDisplay={setProjectSelectedToDisplay} />;
+      return <HomePage goProjectsPage={removeProjectSelectedIfTabActive} projectSelectedToDisplay={projectSelectedToDisplay} setProjectSelectedToDisplay={setProjectSelectedToDisplay} />;
     } else if (activeTab === currentLanguage.activeTabProjects) {
       return <ProjectsPage projectSelectedToDisplay={projectSelectedToDisplay} setProjectSelectedToDisplay={setProjectSelectedToDisplay} />;
     } else if (activeTab === currentLanguage.activeTabContact) {

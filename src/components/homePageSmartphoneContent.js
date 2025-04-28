@@ -3,7 +3,7 @@ import IntroSection from './introSection'
 import ExproSection from './exproSection'
 import ProjectsSection from './projectsSection'
 
-const HomePageSmartphoneContent = ({ showProjectDetails }) => {
+const HomePageSmartphoneContent = ({ showProjectDetails, goProjectsPage }) => {
     return (
         <div>
             <div>
@@ -14,7 +14,7 @@ const HomePageSmartphoneContent = ({ showProjectDetails }) => {
             </div>
             <div className="featured-projects">
                 <ExproSection />
-                <ProjectsSection showProjectDetails={showProjectDetails} />
+                <ProjectsSection showProjectDetails={showProjectDetails} goProjectsPage={goProjectsPage} />
             </div>
         </div>
     )

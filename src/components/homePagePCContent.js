@@ -3,7 +3,7 @@ import IntroSection from './introSection'
 import ExproSection from './exproSection'
 import ProjectsSection from './projectsSection'
 
-const HomePagePCContent = ({ showProjectDetails }) => {
+const HomePagePCContent = ({ showProjectDetails, goProjectsPage }) => {
     return (
         <div className="accueil-content">
             <div className="profile-section">
@@ -17,7 +17,7 @@ const HomePagePCContent = ({ showProjectDetails }) => {
 
                 <div className="featured-projects">
                     <ExproSection />
-                    <ProjectsSection showProjectDetails={showProjectDetails} />
+                    <ProjectsSection showProjectDetails={showProjectDetails} goProjectsPage={goProjectsPage} />
                 </div>
             </div>
         </div>
