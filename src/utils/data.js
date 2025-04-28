@@ -1,6 +1,10 @@
 const data = {
-    links: [],
-    github: "...",
+    links: [
+        {
+            name: "Github",
+            link: "https://github.com/Luo-Ying/CloneSportify",
+        },
+    ],
     title: {
         "en": "CloneSportify",
         "fr": "CloneSportify",
@@ -20,14 +24,14 @@ const data = {
     images: [
     ],
     simpleInfo: {
-        "en": "A clone of Spotify, with a simple interface coding with Java for Android and a Python API.",
-        "fr": "Une application mobile simple, codée en Java pour Android, avec une API développée en Python utilisant le middleware ZerocICE.",
-        "zh": "一个简单的Spotify克隆app，使用Java编写Android应用程序，并使用Python和中间件ZerocICE开发API。"
+        "en": "A simple mobile application, coded in Java for Android, with an API developed in Python using the ZerocICE middleware, and a MongoDB database.",
+        "fr": "Une application mobile simple, codée en Java pour Android, avec une API développée en Python utilisant le middleware ZerocICE, et une base de données MongoDB.",
+        "zh": "一个简单的移动应用程序，使用Java为Android编写，具有使用ZerocICE中间件开发的Python API，以及MongoDB数据库。"
     },
     introduction: {
-        "en": "",
-        "fr": "",
-        "zh": ""
+        "en": "This project aims to operate a music streaming service, similar to the Spotify application, with a simple interface on Android systems. The application allows performing essential actions such as adding a song, deleting a song, modifying song information, as well as searching for songs in the user's database. It also offers the possibility to play, pause, or stop a song during streaming. Additionally, an ASR (Automatic Speech Recognition) system is integrated, allowing users to perform these actions using voice commands.",
+        "fr": "Ce projet a pour objectif de faire fonctionner un service de streaming musical, similaire à l'application Spotify, avec une interface simple sur système Android. L'application permet d'effectuer les actions essentielles telles que l'ajout d'une musique, la suppression d'une musique, la modification des informations d'une musique, ainsi que la recherche de musiques dans la base de données de l'utilisateur. Elle offre également la possibilité de lire, mettre en pause ou arrêter une musique en cours de streaming. En complément, un système d'ASR (Automatic Speech Recognition) est intégré, permettant aux utilisateurs d'effectuer ces actions par commande vocale.",
+        "zh": "该项目旨在运行一个类似Spotify应用程序的音乐流媒体服务，在Android系统上提供简单的界面。该应用程序允许执行基本操作，如添加歌曲、删除歌曲、修改歌曲信息以及在用户数据库中搜索歌曲。它还提供播放、暂停或停止正在流媒体播放的歌曲的功能。此外，该应用还集成了ASR（自动语音识别）系统，允许用户通过语音命令执行这些操作。"
     },
     detailsDescription: {
         sentence: {
@@ -37,47 +41,51 @@ const data = {
         },
         services: [
             {
-                "en": "A FastAPI API, allowing to manage requests and ensure communication between the front-end and the Elasticsearch databases.",
-                "fr": "Une API développée avec FastAPI, permettant de gérer les requêtes et d'assurer la communication entre le front-end et les bases de données Elasticsearch.",
-                "zh": "一个用FastAPI开发的API，允许管理请求并确保前端和Elasticsearch数据库之间的通信。"
+                "en": "A simple interface for the application, coded in Java for Android.",
+                "fr": "Une simple interface pour l'application, codée en Java pour Android.",
+                "zh": "一个简单的应用程序界面，使用Java编写, 适用于Android系统。"
             },
             {
-                "en": "- A FTP service is installed on the server to allow the retrieval of files to be processed, depending on the requested services. This same service also allows retrieving files processed by the programs. Once the processing is finished, the API sends a signal to the client to indicate that the result is available on the FTP server. The client can then retrieve the file using the corresponding mission identifier.",
-                "fr": "- Un service FTP est installé sur le serveur afin de permettre la récupération des fichiers à traiter, en fonction des services demandés. Ce même service permet également de récupérer les fichiers traités par les programmes. Une fois le traitement terminé, l’API envoie un signal au client pour indiquer que le résultat est disponible sur le serveur FTP. Le client peut alors récupérer le fichier en utilisant l’identifiant de mission correspondant.",
-                "zh": "- 一个FTP服务安装在服务器上，允许根据请求的服务检索要处理的文件。这个服务还允许检索被程序处理过的文件。一旦处理完成，API会向客户端发送信号，表示结果已可在FTP服务器上获取。客户端可以使用相应的任务标识符检索文件。"
+                "en": "An API for the music streaming service, developed by combining Python, the middleware ZerocICE and VLC for audio stream management. This API allows managing client actions, such as adding music, deleting music, modifying music information, playing, pausing, and stopping the playback, among other things.",
+                "fr": "Une API pour la gestion du streaming musical, développée en combinant le langage Python, le middleware ZerocICE et VLC pour la gestion du flux audio. Cette API permet de gérer les actions des clients, telles que l'ajout de musiques, la suppression de musiques, la modification des informations musicales, la lecture, la mise en pause et l'arrêt de la lecture, entre autres.",
+                "zh": "一个音乐流媒体服务API，使用Python、中间件ZerocICE和VLC进行音频流管理。该API允许管理客户端操作，例如添加音乐、删除音乐、修改音乐信息、播放、暂停和停止播放，等等。"
             },
             {
-                "en": "- A Python API developed with FastAPI manages requests related to all additional services offered by Ajaris. It also allows triggering the execution of programs installed on the server, placing them in a processing queue with a mission identifier. Once the mission is added to the queue, the API returns the mission identifier to the client. The latter can then use this identifier to retrieve the result once the processing is finished.",
-                "fr": "- Une API Python développée avec FastAPI gère les requêtes liées à l’ensemble des services supplémentaires proposés par Ajaris. Elle permet également de déclencher l’exécution des programmes installés sur le serveur, en les plaçant dans une file d’attente de traitement, avec un identifiant de mission associé. Une fois la mission ajoutée à la file, l’API retourne l’identifiant de mission au client. Ce dernier pourra ensuite utiliser cet identifiant pour récupérer le résultat une fois le traitement terminé.",
-                "zh": "- 一个用FastAPI开发的Python API管理与Ajaris提供的所有附加服务相关的请求。它还允许触发安装在服务器上的程序的执行，将它们放置在处理队列中，并分配一个任务标识符。一旦任务被添加到队列中，API会返回任务标识符给客户端。后者可以随后使用该标识符检索结果，一旦处理完成。"
+                "en": "Another API with Python Flask, integrating the SpeechBrain library to manage the ASR (Automatic Speech Recognition) part. This API allows processing the conversion of speech to text to offer users the possibility to perform actions using voice commands.",
+                "fr": "Une autre API avec Python Flask, en intégrant la bibliothèque SpeechBrain pour gérer la partie ASR (Automatic Speech Recognition). Cette API permet de traiter la conversion de la parole en texte afin d'offrir aux utilisateurs la possibilité d'effectuer des actions via des commandes vocales.",
+                "zh": "一个使用Python Flask开发的API，集成了SpeechBrain库来管理ASR（自动语音识别）部分。该API允许处理语音转换为文本，为用户提供通过语音命令执行操作的可能性。"
             },
             {
-                "en": "- A YOLOv8 object detection model, trained on a small dataset of 80 classes (for a proof of concept – PoC), is integrated into the object detection service. This model allows processing visual contents by returning, in JSON format, the detected objects and their location within these contents.",
-                "fr": "- Un modèle de détection d’objets YOLOv8 (You Only Look Once), issu de la librairie Ultralytics et entraîné sur un petit jeu de données comprenant 80 classes (dans le cadre d’une preuve de concept – PoC), est intégré dans le service de détection d’objets. Ce modèle permet de traiter les fichiers contenant des contenus visuels en retournant, au format JSON, les objets détectés ainsi que leur localisation dans ces contenus.",
-                "zh": "- 一个YOLOv8对象检测模型，在小型数据集上训练了80个类（用于概念验证 – PoC），并集成到对象检测服务中。该模型允许处理视觉内容，并以JSON格式返回检测到的对象及其在内容中的位置。"
+                "en": "A database with MongoDB to manage a music library.",
+                "fr": "Une base de données avec MongoDB afin de gérer une bibliothèque des titres musical.",
+                "zh": "一个使用MongoDB管理音乐库的数据库。"
             },
         ]
     },
     technologies: [
         {
-            name: "Linux",
-            icone: "/images/Object detection/Linux.svg"
+            name: "Java",
+            icone: "/images/CloneSportify/Java.svg"
         },
         {
             name: "Python",
-            icone: "/images/Object detection/Python.svg"
+            icone: "/images/CloneSportify/Python.svg"
         },
         {
-            name: "FastAPI",
-            icone: "/images/Object detection/FastAPI.svg"
+            name: "Python Flask",
+            icone: "/images/CloneSportify/Flask.svg"
         },
         {
-            name: "",
-            icone: "/images/Object detection/cropped-YOLOv8-removebg-preview-1-300x93.png"
+            name: "ZerocICE",
+            icone: "/images/CloneSportify/zeroc-logo-alt.svg"
         },
         {
-            name: "Ultralytics",
-            icone: "/images/Object detection/Ultralytics.svg"
+            name: "VLC",
+            icone: "/images/CloneSportify/VLC_Icon.svg.png"
+        },
+        {
+            name: "MongoDB",
+            icone: "/images/CloneSportify/MongoDB.png"
         },
     ],
     challenges: {

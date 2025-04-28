@@ -20,13 +20,9 @@ const ProjectsSection = ({ showProjectDetails, goProjectsPage }) => {
         // currentLanguage.projectsSection.projects.universityProjects[0],
         // currentLanguage.projectsSection.projects.universityProjects[1],
         // currentLanguage.projectsSection.projects.universityProjects[2],
-        // currentLanguage.projectsSection.projects.personalProjects[0],
+        projects.personal[0],
         // currentLanguage.projectsSection.projects.personalProjects[1]
     ]
-
-    // const goProjectsPage = () => {
-    //     goProjectsPage(currentLanguage.activeTabProjects, false)
-    // }
 
     return (
         <div>
