@@ -76,7 +76,7 @@ export const professionalProjects = [
         technologies: [
             {
                 name: "React",
-                icone: "/images/spectre/react.png"
+                icone: "/images/spectre/React.png"
             },
             {
                 name: "Python",
@@ -125,14 +125,14 @@ export const professionalProjects = [
         imagePreview: "/images/AjarisUploaderMobile/imagePreview.png",
         imagesMinSize: "10%",
         images: [
-            "/images/AjarisUploaderMobile/Splash.png",
+            "/images/AjarisUploaderMobile/splash.png",
             "/images/AjarisUploaderMobile/List sites.png",
             "/images/AjarisUploaderMobile/users in site.png",
             "/images/AjarisUploaderMobile/site selection.png",
             "/images/AjarisUploaderMobile/Add site - site name.jpeg",
             "/images/AjarisUploaderMobile/Add site - site url.jpeg",
             "/images/AjarisUploaderMobile/Add site - user id.jpeg",
-            "/images/AjarisUploaderMobile/Site ajouté.jpeg",
+            "/images/AjarisUploaderMobile/Site added.jpeg",
             "/images/AjarisUploaderMobile/Upload - 1.jpeg",
             "/images/AjarisUploaderMobile/Upload - 2.jpeg",
             "/images/AjarisUploaderMobile/Upload - 3.jpeg",
