@@ -12,6 +12,7 @@ const ProjectDetailsPage = ({ project, setProjectSelectedToDisplay, pathAccessed
 
 
     const [imageToDisplay, setImageToDisplay] = useState(null);
+    const [imageToDisplayIndex, setImageToDisplayIndex] = useState(0);
 
     const [isHoveredProjectImagesDiv, setIsHoveredProjectImagesDiv] = useState(false);
 
@@ -95,7 +96,10 @@ const ProjectDetailsPage = ({ project, setProjectSelectedToDisplay, pathAccessed
                                     style={{ width: `${project.imagesMinSize}`, height: `${project.imagesMinSize}` }}
                                     onMouseEnter={(e) => fnOnMouseEnter(e)}
                                     onMouseLeave={(e) => fnOnMouseLeave(e)}
-                                    onClick={() => { setImageToDisplay(image); }}
+                                    onClick={() => {
+                                        setImageToDisplay(image);
+                                        setImageToDisplayIndex(index);
+                                    }}
                                 />
                             ))}
                         </div>
@@ -124,7 +128,12 @@ const ProjectDetailsPage = ({ project, setProjectSelectedToDisplay, pathAccessed
 
                 </div>
             </div>
-            {imageToDisplay && <ImageDisplayOnPage image={imageToDisplay} setImageToDisplay={setImageToDisplay} />}
+            {imageToDisplay &&
+                <ImageDisplayOnPage
+                    listProjectImages={project.images}
+                    setImageToDisplay={setImageToDisplay}
+                    imageToDisplayIndex={imageToDisplayIndex}
+                />}
         </div>
     )
 
