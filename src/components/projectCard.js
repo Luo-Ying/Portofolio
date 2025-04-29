@@ -12,7 +12,6 @@ const CardProject = ({ project }) => {
             onMouseLeave={() => setIsHovered(false)}>
             <div className="project-preview">
                 <img src={project.imagePreview} alt={project.title[currentLanguage.language]} />
-                {console.log("project.imagePreview", project.imagePreview)}
                 {isHovered && <div className="card-project-overlay" >{project.simpleInfo[currentLanguage.language]}</div>}
             </div>
             <div className="project-info">

@@ -73,8 +73,6 @@ const PortofolioHeader = ({ activeTab, fnSetActiveTab }) => {
                 </button>
             </nav>
 
-            {console.log("window.innerWidth", windowWidth)}
-
 
             {windowWidth >= 768 && (
                 <LanguageSelector handleLanguageEffect={handleLanguageEffect} />
