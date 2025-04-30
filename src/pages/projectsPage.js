@@ -14,8 +14,8 @@ const ProjectsPage = ({ projectSelectedToDisplay, setProjectSelectedToDisplay })
     setProjectsList(
       [
         ...projects.professional,
+        ...projects.personal,
         ...projects.university,
-        ...projects.personal
       ]
     );
   }, []);

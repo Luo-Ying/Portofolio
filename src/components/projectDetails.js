@@ -121,7 +121,7 @@ const ProjectDetailsPage = ({ project, setProjectSelectedToDisplay, pathAccessed
                             ))}
                         </div>
 
-                        {isHoveredProjectImagesDiv && windowWidth >= 768 && (
+                        {isHoveredProjectImagesDiv && windowWidth >= 768 && !imageToDisplay && (
                             <button className="more-projects-button-next" onClick={() => handleScroll('right')}>
                                 <img src={nextButton} alt="next" style={{ width: 50, height: 50 }} />
                             </button>

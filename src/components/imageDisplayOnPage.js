@@ -11,12 +11,10 @@ const ImageDisplayOnPage = ({
 }) => {
 
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    const [windowHeight, setWindowHeight] = useState(window.innerHeight);
 
     useEffect(() => {
         const handleResize = () => {
             setWindowWidth(window.innerWidth);
-            setWindowHeight(window.innerHeight);
         };
 
         window.addEventListener('resize', handleResize);
@@ -68,7 +66,7 @@ const ImageDisplayOnPage = ({
             <div className="image-display-on-page" onClick={() => setImageToDisplay(null)}>
 
 
-                <img src={listProjectImages[imageToDisplayIndexOnPage]} className="image-display-on-page-image" alt="Project image" />
+                <img src={listProjectImages[imageToDisplayIndexOnPage]} className="image-display-on-page-image" alt="Project" />
 
             </div>
             <button className="more-projects-button-next" onClick={() => handleScrollImage('right')} style={{
