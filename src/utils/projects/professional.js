@@ -126,9 +126,9 @@ export const professionalProjects = [
         imagesMinSize: "10%",
         images: [
             "/images/AjarisUploaderMobile/splash.png",
-            "/images/AjarisUploaderMobile/List sites.png",
+            "/images/AjarisUploaderMobile/List sites.jpg",
             "/images/AjarisUploaderMobile/users in site.png",
-            "/images/AjarisUploaderMobile/site selection.png",
+            "/images/AjarisUploaderMobile/site selected.jpg",
             "/images/AjarisUploaderMobile/Add site - site name.jpeg",
             "/images/AjarisUploaderMobile/Add site - site url.jpeg",
             "/images/AjarisUploaderMobile/Add site - user id.jpeg",
