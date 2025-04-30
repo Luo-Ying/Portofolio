@@ -24,8 +24,8 @@ export const universityProjects = [
         imagesMinSize: "10%",
         images: [
             "/images/shazam du vin/all_wines.jpg",
-            "/images/shazam du vin/add_wine.jpg",
             "/images/shazam du vin/buttons.jpg",
+            "/images/shazam du vin/add_wine.jpg",
             "/images/shazam du vin/modif_wine.jpg",
         ],
         simpleInfo: {

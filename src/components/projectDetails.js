@@ -1,6 +1,6 @@
 import '../styles/projectDeatils.css';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { currentLanguage } from '../utils/globalVars';
 import goBack from '../assets/go-back.svg';
@@ -11,10 +11,27 @@ import nextButton from "../assets/droite.png"
 const ProjectDetailsPage = ({ project, setProjectSelectedToDisplay, pathAccessed }) => {
 
 
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
     const [imageToDisplay, setImageToDisplay] = useState(null);
     const [imageToDisplayIndex, setImageToDisplayIndex] = useState(0);
 
     const [isHoveredProjectImagesDiv, setIsHoveredProjectImagesDiv] = useState(false);
+
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        // Nettoyage de l'écouteur d'événement lors du démontage du composant
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
 
 
     const fnOnMouseEnter = (e) => {
@@ -80,7 +97,7 @@ const ProjectDetailsPage = ({ project, setProjectSelectedToDisplay, pathAccessed
                         onMouseEnter={() => setIsHoveredProjectImagesDiv(true)}
                         onMouseLeave={() => setIsHoveredProjectImagesDiv(false)}>
 
-                        {isHoveredProjectImagesDiv && (
+                        {isHoveredProjectImagesDiv && windowWidth >= 768 && (
                             <button className="more-projects-button-previous" onClick={() => handleScroll('left')}>
                                 <img src={nextButton} alt="previous" style={{ transform: 'rotate(180deg)', width: 50, height: 50 }} />
                             </button>
@@ -104,7 +121,7 @@ const ProjectDetailsPage = ({ project, setProjectSelectedToDisplay, pathAccessed
                             ))}
                         </div>
 
-                        {isHoveredProjectImagesDiv && (
+                        {isHoveredProjectImagesDiv && windowWidth >= 768 && (
                             <button className="more-projects-button-next" onClick={() => handleScroll('right')}>
                                 <img src={nextButton} alt="next" style={{ width: 50, height: 50 }} />
                             </button>
@@ -130,6 +147,7 @@ const ProjectDetailsPage = ({ project, setProjectSelectedToDisplay, pathAccessed
             </div>
             {imageToDisplay &&
                 <ImageDisplayOnPage
+                    // windowWidth={windowWidth}
                     listProjectImages={project.images}
                     setImageToDisplay={setImageToDisplay}
                     imageToDisplayIndex={imageToDisplayIndex}

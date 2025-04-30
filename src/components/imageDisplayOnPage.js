@@ -10,6 +10,22 @@ const ImageDisplayOnPage = ({
     imageToDisplayIndex,
 }) => {
 
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [windowHeight, setWindowHeight] = useState(window.innerHeight);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+            setWindowHeight(window.innerHeight);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     const [imageToDisplayIndexOnPage, setImageToDisplayIndexOnPage] = useState(imageToDisplayIndex);
 
 
@@ -39,7 +55,15 @@ const ImageDisplayOnPage = ({
                 transform: 'translateY(-50%)',
                 left: '10%'
             }}>
-                <img src={nextButton} alt="previous" style={{ transform: 'rotate(180deg)', width: 50, height: 50 }} />
+                <img
+                    src={nextButton}
+                    alt="previous"
+                    style={{
+                        transform: 'rotate(180deg)',
+                        width: windowWidth * 0.034 < 30 ? 30 : windowWidth * 0.034,
+                        height: windowWidth * 0.034 < 30 ? 30 : windowWidth * 0.034
+                    }}
+                />
             </button>
             <div className="image-display-on-page" onClick={() => setImageToDisplay(null)}>
 
@@ -54,7 +78,14 @@ const ImageDisplayOnPage = ({
                 transform: 'translateY(-50%)',
                 right: '10%'
             }}>
-                <img src={nextButton} alt="next" style={{ width: 50, height: 50 }} />
+                <img
+                    src={nextButton}
+                    alt="next"
+                    style={{
+                        width: windowWidth * 0.034 < 30 ? 30 : windowWidth * 0.034,
+                        height: windowWidth * 0.034 < 30 ? 30 : windowWidth * 0.034
+                    }}
+                />
             </button>
         </div>
     );

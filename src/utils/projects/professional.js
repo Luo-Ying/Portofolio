@@ -209,9 +209,9 @@ export const professionalProjects = [
             },
         ],
         title: {
-            "en": "Object detection for visual contents",
-            "fr": "Détection d'objet pour les contenus visuels",
-            "zh": "用于视觉内容的对象检测",
+            "en": "Automatic image semantic tagging",
+            "fr": "Tagging automatique des images",
+            "zh": "自动图像语义标签",
         },
         logo: "/images/company building.png",
         organization: {
