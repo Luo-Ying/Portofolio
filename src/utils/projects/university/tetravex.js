@@ -23,15 +23,17 @@ export const Tetravex = {
         },
         link: "https://github.com/Luo-Ying/Tetravex/tree/main/Projet-Tetravex",
     },
-    imagePreview: "",
+    imagePreview: "/images/Tetravex/8x8_threadpool.jpg",
     imagesMinSize: "30%",
     images: [
-        "",
+        "/images/Tetravex/8x8_threadpool.jpg",
+        "/images/Tetravex/table duration.png",
+        "/images/Tetravex/line-graph.png",
     ],
     simpleInfo: {
-        "en": "A game developed in C++ with different multi-threading methods, aiming to recreate the Tetravex game.",
-        "fr": "Un jeu développé en C++ avec les différentes méthodes de multi-threading, visant à recréer le jeu Tetravex.",
-        "zh": "一个使用C++和不同的多线程方法实现开发的游戏，旨在重现Tetravex游戏。"
+        "en": "A game developed in C++ integrating different multithreading methods, aiming to recreate the Tetravex game and solve it automatically using a backtracking algorithm",
+        "fr": "Un jeu développé en C++ intégrant différentes méthodes de multithreading, visant à recréer le jeu Tetravex et à le résoudre automatiquement à l’aide d’un algorithme de backtracking.",
+        "zh": "一个使用C++开发的游戏，集成了不同的多线程方法，旨在重现Tetravex游戏并使用回溯算法自动解决游戏。"
     },
     introduction: [
         {
