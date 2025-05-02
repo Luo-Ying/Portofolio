@@ -1,10 +1,10 @@
-import { Spectre } from "./projects/professional/spectre";
-import { AjarisUploaderMobile } from "./projects/professional/ajarisUploaderMobile";
-import { ObjectDetection } from "./projects/professional/objectDetection";
-import { CloneSportify } from "./projects/personal/cloneSportify";
-import { MedicalImageRecognition } from "./projects/personal/medicalImageRecognition";
-import { ShazamDuVin } from "./projects/university/shazamDuVin";
-import { Tetravex } from "./projects/university/tetravex";
+import { Spectre } from "./data/projects/professional/spectre";
+import { AjarisUploaderMobile } from "./data/projects/professional/ajarisUploaderMobile";
+import { ObjectDetection } from "./data/projects/professional/objectDetection";
+import { CloneSportify } from "./data/projects/personal/cloneSportify";
+import { MedicalImageRecognition } from "./data/projects/personal/medicalImageRecognition";
+import { ShazamDuVin } from "./data/projects/university/shazamDuVin";
+import { Tetravex } from "./data/projects/university/tetravex";
 
 export const projects = {
     professional: [
