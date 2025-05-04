@@ -5,7 +5,7 @@ import { CloneSportify } from "./data/projects/personal/cloneSportify";
 import { MedicalImageRecognition } from "./data/projects/personal/medicalImageRecognition";
 import { ShazamDuVin } from "./data/projects/university/shazamDuVin";
 import { Tetravex } from "./data/projects/university/tetravex";
-
+import { FrancePublicMarket } from "./data/projects/university/francePublicMarket";
 export const projects = {
     professional: [
         Spectre,
@@ -19,6 +19,7 @@ export const projects = {
     university: [
         ShazamDuVin,
         Tetravex,
+        FrancePublicMarket,
     ],
 };
 
