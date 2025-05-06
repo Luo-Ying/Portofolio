@@ -19,16 +19,16 @@ export const FrancePublicMarket = {
         },
         link: "https://github.com/Luo-Ying/BiApplication-DataMining-FrancePublicProcurement",
     },
-    imagePreview: "/images/francePublicMarket/Buy and sell data.png",
+    imagePreview: "/images/FrancePublicMarket/Buy and sell data.png",
     imagesMinSize: "20%",
     images: [
-        "/images/francePublicMarket/Department buy data.png",
-        "/images/francePublicMarket/Department sell data.png",
-        "/images/francePublicMarket/Buyers and sellers communication top.png",
-        "/images/francePublicMarket/Buyers communication top.png",
-        "/images/francePublicMarket/Sellers communication top.png",
-        "/images/francePublicMarket/Outgoing monistream top 50 data.png",
-        "/images/francePublicMarket/Ingoing monistream top 50 data.png",
+        "/images/FrancePublicMarket/Department buy data.png",
+        "/images/FrancePublicMarket/Department sell data.png",
+        "/images/FrancePublicMarket/Buyers and sellers communication top.png",
+        "/images/FrancePublicMarket/Buyers communication top.png",
+        "/images/FrancePublicMarket/Sellers communication top.png",
+        "/images/FrancePublicMarket/Outgoing monistream top 50 data.png",
+        "/images/FrancePublicMarket/Ingoing monistream top 50 data.png",
     ],
     simpleInfo: {
         "en": "This project is realized in the context of Data Mining and Application BI. It aims to clean, visualize and analyze the data of the French public market using tools like Pandas, Matplotlib, Seaborn, etc.",
@@ -89,23 +89,23 @@ export const FrancePublicMarket = {
     technologies: [
         {
             name: "Python",
-            icone: "/images/francePublicMarket/Python.svg"
+            icone: "/images/FrancePublicMarket/Python.svg"
         },
         {
             name: "SQLite",
-            icone: "/images/francePublicMarket/SQLite.svg"
+            icone: "/images/FrancePublicMarket/SQLite.svg"
         },
         {
             name: "Pandas",
-            icone: "/images/francePublicMarket/Pandas.svg"
+            icone: "/images/FrancePublicMarket/Pandas.svg"
         },
         {
             name: "Matplotlib",
-            icone: "/images/francePublicMarket/Matplotlib.svg"
+            icone: "/images/FrancePublicMarket/Matplotlib.svg"
         },
         {
             name: "Numpy",
-            icone: "/images/francePublicMarket/Numpy.svg"
+            icone: "/images/FrancePublicMarket/NumPy.svg"
         },
     ],
     challenges: {
