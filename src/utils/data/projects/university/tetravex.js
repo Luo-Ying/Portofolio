@@ -17,8 +17,8 @@ export const Tetravex = {
     logo: "/images/chapeau-de-graduation.png",
     organization: {
         name: {
-            "en": "University",
-            "fr": "Académique",
+            "en": "University project",
+            "fr": "Projet académique",
             "zh": "大学项目"
         },
         link: "https://github.com/Luo-Ying/Tetravex/tree/main/Projet-Tetravex",

@@ -6,6 +6,8 @@ import { MedicalImageRecognition } from "./data/projects/personal/medicalImageRe
 import { ShazamDuVin } from "./data/projects/university/shazamDuVin";
 import { Tetravex } from "./data/projects/university/tetravex";
 import { FrancePublicMarket } from "./data/projects/university/francePublicMarket";
+import { DecisionAid } from "./data/projects/university/decisionAid";
+
 export const projects = {
     professional: [
         Spectre,
@@ -20,6 +22,7 @@ export const projects = {
         ShazamDuVin,
         Tetravex,
         FrancePublicMarket,
+        DecisionAid,
     ],
 };
 
