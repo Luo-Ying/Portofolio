@@ -74,11 +74,11 @@ const ProjectDetailsPage = ({ project, setProjectSelectedToDisplay, pathAccessed
                     <img className='go-back-icon' src={goBack} alt="Go back" />
                 </button>
                 <div>
-                    <a className="return-btn-sticky-header" onClick={() => { setProjectSelectedToDisplay(null) }}>
+                    <button className="return-btn-sticky-header" onClick={() => { setProjectSelectedToDisplay(null) }}>
                         <span className='project-details-span-path-accessed'>{pathAccessed}</span>
-                    </a>
+                    </button>
                     <span className='project-details-span-path-accessed'> / </span>
-                    <a><span className='project-details-span-path-accessed' style={{ textDecoration: 'underline' }}> {project.title[currentLanguage.language]} </span></a>
+                    <button className="return-btn-sticky-header" ><span className='project-details-span-path-accessed' style={{ textDecoration: 'underline' }}> {project.title[currentLanguage.language]} </span></button>
                 </div>
             </div>
             <div className="project-details-content" style={{ overflowY: 'auto', marginTop: '20px' }}>
@@ -108,7 +108,7 @@ const ProjectDetailsPage = ({ project, setProjectSelectedToDisplay, pathAccessed
                                 <img
                                     key={index}
                                     src={image}
-                                    alt={`Project image ${index + 1}`}
+                                    alt={`Project ${index + 1}`}
                                     className='project-details-content-images-image'
                                     style={{ width: `${project.imagesMinSize}`, height: `${project.imagesMinSize}` }}
                                     onMouseEnter={(e) => fnOnMouseEnter(e)}
