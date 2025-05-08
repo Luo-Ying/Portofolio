@@ -6,7 +6,6 @@ import HomePage from './pages/homePage';
 import ProjectsPage from './pages/projectsPage';
 import ContactPage from './pages/contactPage';
 import PortofolioHeader from './components/portofolioHeader';
-import ProjectDetailsPage from './components/projectDetails';
 import { currentLanguage } from './utils/globalVars';
 
 function App() {

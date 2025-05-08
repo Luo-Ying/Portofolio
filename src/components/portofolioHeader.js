@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { handleCurrentLanguage, currentLanguage } from '../utils/globalVars';
 import DropDownLanguage from './dropDownLanguage';
 import LanguageSelector from './languageSelector';
-import downloadIcon from '../assets/telecharger.png';
 
 const PortofolioHeader = ({ activeTab, fnSetActiveTab }) => {
 

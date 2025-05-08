@@ -112,9 +112,6 @@
     height: 25px;
 }
 
-.project-details-content-path-accessed-sticky-header .return-btn-sticky-header .project-details-span-path-accessed .project-details-span-path-accessed {
-    color: #848991;
-}
 
 .project-details-content-path-accessed-sticky-header {
     display: flex;
@@ -134,12 +131,16 @@
 
 .return-btn-sticky-header {
     background-color: transparent;
+    color: transparent;
     border: none;
     cursor: pointer;
 }
 
-.project-details-span-path-accessed {
+.project-details-span-path-accessed,
+.return-btn-sticky-header {
     cursor: pointer;
+    background-color: transparent;
+    border: none;
 }
 
 .project-details-content-images {
