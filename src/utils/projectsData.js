@@ -7,7 +7,7 @@ import { ShazamDuVin } from "./data/projects/university/shazamDuVin";
 import { Tetravex } from "./data/projects/university/tetravex";
 import { FrancePublicMarket } from "./data/projects/university/francePublicMarket";
 import { DecisionAid } from "./data/projects/university/decisionAid";
-
+import { CharacterGraphBuilder } from "./data/projects/university/characterGraphBuilder";
 export const projects = {
     professional: [
         Spectre,
@@ -23,6 +23,7 @@ export const projects = {
         Tetravex,
         FrancePublicMarket,
         DecisionAid,
+        CharacterGraphBuilder,
     ],
 };
 

@@ -87,7 +87,10 @@ const ProjectDetailsPage = ({ project, setProjectSelectedToDisplay, pathAccessed
                 <div className='project-details-content-organization'><a href={project.organization.link} target='_blank' rel='noopener noreferrer'>{project.organization.name[currentLanguage.language]}</a></div>
                 <div className='project-details-content-introduction'>
                     {project.introduction.map((introduction, index) => (
-                        <p key={index}>{introduction[currentLanguage.language]}</p>
+                        <div key={index}>
+                            <p>{introduction[currentLanguage.language]}</p>
+                            <br />
+                        </div>
                     ))}
                 </div>
 
