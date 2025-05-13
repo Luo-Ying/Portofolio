@@ -1,0 +1,34 @@
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    margin: 20px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.filter-button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.dropdown-btn {
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 6px 18px;
+    background: #fff;
+    font-size: 18px;
+    color: #222;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: none;
+}
+
+.dropdown-btn .arrow {
+    margin-left: 8px;
+    font-size: 14px;
+}

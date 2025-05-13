@@ -16,11 +16,11 @@ const ProjectsSection = ({ showProjectDetails, goProjectsPage }) => {
     // TODO: build projects list and add onclick event to project card
 
     const projectsList = [
-        ...projects.professional,
+        ...projects.professional.projects,
         // currentLanguage.projectsSection.projects.universityProjects[0],
         // currentLanguage.projectsSection.projects.universityProjects[1],
         // currentLanguage.projectsSection.projects.universityProjects[2],
-        projects.personal[0],
+        projects.personal.projects[0],
         // currentLanguage.projectsSection.projects.personalProjects[1]
     ]
 

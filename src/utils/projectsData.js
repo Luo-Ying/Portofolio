@@ -8,23 +8,33 @@ import { Tetravex } from "./data/projects/university/tetravex";
 import { FrancePublicMarket } from "./data/projects/university/francePublicMarket";
 import { DecisionAid } from "./data/projects/university/decisionAid";
 import { CharacterGraphBuilder } from "./data/projects/university/characterGraphBuilder";
+
 export const projects = {
-    professional: [
-        Spectre,
-        AjarisUploaderMobile,
-        ObjectDetection,
-    ],
-    personal: [
-        CloneSportify,
-        MedicalImageRecognition,
-    ],
-    university: [
-        ShazamDuVin,
-        Tetravex,
-        FrancePublicMarket,
-        DecisionAid,
-        CharacterGraphBuilder,
-    ],
+    professional: {
+        type: 'Professionnel',
+        projects: [
+            Spectre,
+            AjarisUploaderMobile,
+            ObjectDetection,
+        ],
+    },
+    personal: {
+        type: 'Personnel',
+        projects: [
+            CloneSportify,
+            MedicalImageRecognition,
+        ],
+    },
+    university: {
+        type: 'Universitaire',
+        projects: [
+            ShazamDuVin,
+            Tetravex,
+            FrancePublicMarket,
+            DecisionAid,
+            CharacterGraphBuilder,
+        ],
+    },
 };
 
 export default projects;
