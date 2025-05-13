@@ -24,8 +24,8 @@ export const DecisionAid = {
     images: [
         "/images/DecisionAid/profiles' criteria.png",
         "/images/DecisionAid/Somme pondérée.png",
-        "/images/DecisionAid/Promethee || - sans seuil.png",
-        "/images/DecisionAid/Promethee II - avec seuil.png",
+        "/images/DecisionAid/Promethee ii - sans seuil.png",
+        "/images/DecisionAid/Promethee ii - avec seuil.png",
         "/images/DecisionAid/Topsis.png",
     ],
     simpleInfo: {
