@@ -21,6 +21,13 @@ const CardProject = ({ project }) => {
                     &nbsp;&nbsp;
                     {project.organization.name[currentLanguage.language]}
                 </div>
+                <div className="project-technologies">
+                    {project.technologies.map((tech, index) => (
+                        <em key={index} className="tech-tag">
+                            {tech.name}
+                        </em>
+                    ))}
+                </div>
             </div>
         </div>
     );

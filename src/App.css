@@ -780,3 +780,19 @@ body {
 .more-projects-button-inner-circle-line-bottom {
   top: 75%;
 }
+
+.tech-tag {
+  color: #000000;
+  font-size: 12px;
+  background-color: #c4c5c7;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 2.5px;
+  width: fit-content;
+}
+
+.project-technologies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
