@@ -1,14 +1,21 @@
 export const Tetravex = {
-    links: [
-        {
-            name: "Github",
-            link: "https://github.com/Luo-Ying/Tetravex/tree/main/Projet-Tetravex",
+    links: {
+        'title': {
+            "en": "Some Links : ",
+            "fr": "Quelques Liens : ",
+            "zh": "一些链接： ",
         },
-        {
-            name: "Tetravex-Wikipedia",
-            link: "https://fr.wikipedia.org/wiki/Tetravex",
-        }
-    ],
+        'links': [
+            {
+                name: "Tetravex-Wikipedia",
+                link: "https://fr.wikipedia.org/wiki/Tetravex",
+            },
+            {
+                name: "Github",
+                link: "https://github.com/Luo-Ying/Tetravex/tree/main/Projet-Tetravex",
+            },
+        ]
+    },
     title: {
         "en": "Tetravex",
         "fr": "Tetravex",

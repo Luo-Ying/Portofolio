@@ -1,10 +1,12 @@
 export const ObjectDetection = {
-    links: [
-        {
-            name: "Github",
-            link: "...",
+    links: {
+        'title': {
+            "en": "Some Links : ",
+            "fr": "Quelques Liens : ",
+            "zh": "一些链接： ",
         },
-    ],
+        'links': []
+    },
     title: {
         "en": "Automatic image semantic tagging",
         "fr": "Tagging automatique des images",

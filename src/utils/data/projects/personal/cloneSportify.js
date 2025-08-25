@@ -1,10 +1,12 @@
 export const CloneSportify = {
-    links: [
-        {
-            name: "Github",
-            link: "https://github.com/Luo-Ying/CloneSportify",
+    links: {
+        'title': {
+            "en": "Some Links : ",
+            "fr": "Quelques Liens : ",
+            "zh": "一些链接： ",
         },
-    ],
+        'links': []
+    },
     title: {
         "en": "CloneSportify",
         "fr": "CloneSportify",

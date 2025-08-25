@@ -1,10 +1,17 @@
 export const ShazamDuVin = {
-    links: [
-        {
-            name: "Github",
-            link: "https://github.com/Luo-Ying/shazam-du-vin",
+    links: {
+        'title': {
+            "en": "Some Links : ",
+            "fr": "Quelques Liens : ",
+            "zh": "一些链接： ",
         },
-    ],
+        'links': [
+            {
+                "name": "Github",
+                "link": "https://github.com/Luo-Ying/shazam-du-vin",
+            },
+        ]
+    },
     title: {
         "en": "Wine shazam",
         "fr": "Shazam du vin",

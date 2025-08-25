@@ -1,10 +1,21 @@
 export const AjarisUploaderMobile = {
-    links: [
-        {
-            name: "Github",
-            link: "...",
+    links: {
+        'title': {
+            "en": "Some Links : ",
+            "fr": "Quelques Liens : ",
+            "zh": "一些链接： ",
         },
-    ],
+        'links': [
+            {
+                "name": "Google Play",
+                "link": "https://play.google.com/store/apps/details?id=com.Orkis.AjarisUploadeMobile&utm_source=emea_Med",
+            },
+            {
+                "name": "App Store",
+                "link": "https://apps.apple.com/fr/app/ajaris-uploader-mobile/id6748943115",
+            },
+        ]
+    },
     title: {
         "en": "Ajaris Uploader Mobile - A mobile application for multimedia files management",
         "fr": "Ajaris Uploader Mobile - Une application mobile destinée à la gestion de fichiers multimédia.",
