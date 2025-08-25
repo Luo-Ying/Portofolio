@@ -1,10 +1,17 @@
 export const CharacterGraphBuilder = {
-    links: [
-        {
-            name: "Github",
-            link: "https://github.com/Luo-Ying/CharacterGraphBuilder",
+    links: {
+        'title': {
+            "en": "Some Links : ",
+            "fr": "Quelques Liens : ",
+            "zh": "一些链接： ",
         },
-    ],
+        'links': [
+            {
+                "name": "Github",
+                "link": "https://github.com/Luo-Ying/CharacterGraphBuilder",
+            },
+        ]
+    },
     title: {
         "en": "Automatic Character Network Extraction - Asimov's Foundation",
         "fr": "Extraction automatique de réseau de personnages - Fondation d'Asimov",

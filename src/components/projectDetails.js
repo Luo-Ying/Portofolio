@@ -95,6 +95,21 @@ const ProjectDetailsPage = ({ project, setProjectSelectedToDisplay, pathAccessed
                 </div>
 
                 {
+                    project.links['links'].length > 0 &&
+                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                        <span className='project-details-content-links-project-title'>
+                            {project.links['title'][currentLanguage.language]}
+                        </span>
+                        &nbsp;&nbsp;
+                        <b className='project-details-content-links-project'>
+                            {project.links['links'].map((link, index) => (
+                                <a key={index} href={link['link']} target='_blank' rel='noopener noreferrer'>{link['name']}</a>
+                            ))}
+                        </b>
+                    </div>
+                }
+
+                {
                     project.images.length > 0 &&
                     <div style={{ position: 'relative' }}
                         onMouseEnter={() => setIsHoveredProjectImagesDiv(true)}

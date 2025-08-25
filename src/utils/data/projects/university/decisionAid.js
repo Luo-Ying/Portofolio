@@ -1,10 +1,17 @@
 export const DecisionAid = {
-    links: [
-        {
-            name: "Github",
-            link: "https://github.com/Luo-Ying/Decision-Aid",
+    links: {
+        'title': {
+            "en": "Some Links : ",
+            "fr": "Quelques Liens : ",
+            "zh": "一些链接： ",
         },
-    ],
+        'links': [
+            {
+                "name": "Github",
+                "link": "https://github.com/Luo-Ying/Decision-Aid",
+            },
+        ]
+    },
     title: {
         "en": "Decision Aid - Which country is the best to live in?",
         "fr": "Aide à la décision - Quel pays optimal à vivre ?",

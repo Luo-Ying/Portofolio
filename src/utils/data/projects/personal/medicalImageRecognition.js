@@ -1,10 +1,12 @@
 export const MedicalImageRecognition = {
-    links: [
-        {
-            name: "Github",
-            link: "https://github.com/Luo-Ying/ImageRecognition",
+    links: {
+        'title': {
+            "en": "Some Links : ",
+            "fr": "Quelques Liens : ",
+            "zh": "一些链接： ",
         },
-    ],
+        'links': []
+    },
     title: {
         "en": "Medical Image Recognition",
         "fr": "Reconnaissance d’images médicales",

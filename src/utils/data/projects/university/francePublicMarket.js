@@ -1,10 +1,17 @@
 export const FrancePublicMarket = {
-    links: [
-        {
-            name: "Github",
-            link: "https://github.com/Luo-Ying/BiApplication-DataMining-FrancePublicProcurement",
+    links: {
+        'title': {
+            "en": "Some Links : ",
+            "fr": "Quelques Liens : ",
+            "zh": "一些链接： ",
         },
-    ],
+        'links': [
+            {
+                "name": "Github",
+                "link": "https://github.com/Luo-Ying/BiApplication-DataMining-FrancePublicProcurement",
+            },
+        ]
+    },
     title: {
         "en": "Application BI (Data Mining) - France Public Market",
         "fr": "Application BI (Data Mining) - Marché public français",

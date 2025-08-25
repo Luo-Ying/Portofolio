@@ -1,10 +1,12 @@
 export const Spectre = {
-    links: [
-        {
-            name: "Github",
-            link: "...",
+    links: {
+        'title': {
+            "en": "Some Links : ",
+            "fr": "Quelques Liens : ",
+            "zh": "一些链接： ",
         },
-    ],
+        'links': []
+    },
     title: {
         "en": "Spectre - A web application for video management",
         "fr": "Spectre - Une application web pour la gestion vidéo",
