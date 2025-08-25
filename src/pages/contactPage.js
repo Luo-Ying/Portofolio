@@ -1,6 +1,7 @@
 import { currentLanguage } from '../utils/globalVars';
 import githubIcon from '../assets/GitHub.svg';
 import linkedinIcon from '../assets/LinkedIn.svg';
+import maltIcon from '../assets/malt-logo-red.svg';
 
 const ContactPage = () => {
     return (
@@ -22,6 +23,9 @@ const ContactPage = () => {
                     </a>
                     <a href="https://www.linkedin.com/in/yingqi-luo/" target="_blank" rel="noopener noreferrer">
                         <img src={linkedinIcon} alt="LinkedIn" className="social-icon" />
+                    </a>
+                    <a href="https://www.malt.fr/profile/yingqiluo" target="_blank" rel="noopener noreferrer">
+                        <img src={maltIcon} alt="LinkedIn" className="social-icon" />
                     </a>
                 </div>
             </div>

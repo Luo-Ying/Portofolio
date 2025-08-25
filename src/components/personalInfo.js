@@ -1,6 +1,7 @@
 import githubIcon from '../assets/GitHub.svg'
 import profilPhoto from '../assets/profil_linkdin.jpg'
 import linkedinIcon from '../assets/LinkedIn.svg'
+import maltIcon from '../assets/malt-logo-red.svg'
 import { currentLanguage } from '../utils/globalVars';
 
 const PersonalInfo = ({ isMobile }) => {
@@ -34,6 +35,9 @@ const PersonalInfo = ({ isMobile }) => {
                     </a>
                     <a href="https://www.linkedin.com/in/yingqi-luo/" target="_blank" rel="noopener noreferrer">
                         <img src={linkedinIcon} alt="LinkedIn" className="social-icon" style={{ width: isMobile ? '20px' : '30px', height: isMobile ? '20px' : '30px' }} />
+                    </a>
+                    <a href="https://www.malt.fr/profile/yingqiluo" target="_blank" rel="noopener noreferrer">
+                        <img src={maltIcon} alt="LinkedIn" className="social-icon" style={{ width: isMobile ? '20px' : '30px', height: isMobile ? '20px' : '30px' }} />
                     </a>
                 </div>
             </div>
